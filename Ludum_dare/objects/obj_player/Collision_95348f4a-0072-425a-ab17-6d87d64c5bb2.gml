@@ -16,6 +16,13 @@ if(grab_key_press && other.grabbed == 1){
 	global.water_lvl = 0
 	
 	other.grabbed = 0
+	
+	//thorwing up
+	if(up_key){
+		other.hsp = hsp
+		other.vsp = -7
+	}
+	
 	other.hsp = face*5
 	other.vsp = -6
 	
