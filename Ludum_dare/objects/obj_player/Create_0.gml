@@ -13,6 +13,7 @@ squish = 1;
 //Gameplay variables
 throw = false
 hold = false
+crawl = false
 global.max_water_lvl = 100
 global.water_lvl = 0
 

@@ -23,12 +23,18 @@ jump_key_press = keyboard_check_pressed(ord("Z")) || gamepad_button_check_presse
 jump_key_release = keyboard_check_released(ord("Z")) || gamepad_button_check_released(0, gp_face1);
 #endregion
 
+
+//Hit box
+if crawl mask_index = spr_player_crawl
+else mask_index = spr_player
+
+
 //sprites
 squish = lerp(squish, 1, 0.11)
 
-mask_index = spr_player
-
 scr_drawplayer()
+
+
 
 //horizontal movement
 move = right_key - left_key;
@@ -42,11 +48,15 @@ if(right_key_press)
 if(left_key_press)
 	face = -1
 	
+	
+	
 //stopping
 if(onground && move == 0)
 	hsp = lerp(hsp, 0, 0.1)
 	
-if abs(hsp) <= 0.1 hsp = 0
+//if abs(hsp) <= 0.1 hsp = 0
+
+
 
 
 //verticle movement
@@ -71,6 +81,23 @@ if(vsp < 0){
 	if(jump_key_release)
 		vsp*=0.5;
 }
+	
+
+//Crawling
+if(down_key && onground){
+	
+	if(down_key_press)
+		squish = 0.8
+	
+	crawl = true
+}
+else if(!down_key) && !place_meeting(x, y-4, obj_block) && crawl{
+	crawl = false
+	
+	//if(down_key_release)
+		squish = 0.8
+}
+	
 	
 //Collisions
 
@@ -133,7 +160,9 @@ if(instance_place(x, y-1, obj_water)){
 	max_vsp = 3
 }
 else{
-	max_spd = 3
+	
+	if crawl max_spd = 2
+	else max_spd = 3
 	max_vsp = 9.8
 }
 

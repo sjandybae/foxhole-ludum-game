@@ -11,7 +11,7 @@ if(grab_key_press && down_key && other.grabbed == 1){
 	throw = true
 	hold = false
 	
-	alarm[0] = 3
+	alarm[0] = 5
 	
 }
 
@@ -36,7 +36,7 @@ if(grab_key_press && other.grabbed == 1){
 	hold = false
 	throw = true
 	
-	alarm[0] = 3
+	alarm[0] = 5
 	
 }
 
