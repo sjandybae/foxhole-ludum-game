@@ -16,11 +16,19 @@ right_key_press = keyboard_check_pressed(vk_right) || gamepad_button_check_press
 left_key_press = keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl);
 
 grab_key_press = keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0, gp_face2);
+grab_key_hold = keyboard_check(ord("X")) || gamepad_button_check(0, gp_face2);
 
 jump_key_hold = keyboard_check(ord("Z")) || gamepad_button_check(0, gp_face1);
 jump_key_press = keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(0, gp_face1);
 jump_key_release = keyboard_check_released(ord("Z")) || gamepad_button_check_released(0, gp_face1);
 #endregion
+
+//sprites
+squish = lerp(squish, 1, 0.11)
+
+mask_index = spr_player
+
+scr_drawplayer()
 
 //horizontal movement
 move = right_key - left_key;
@@ -54,8 +62,10 @@ if(place_meeting(x, y+1, obj_block))
 else
 	onground = false
 	
-if(onground == true && jump_key_press)
+if(onground == true && jump_key_press){
 	vsp = jspd
+	squish = 1.5
+}
 	
 if(vsp < 0){
 	if(jump_key_release)
@@ -97,8 +107,10 @@ if (place_meeting(x, y+vsp, obj_block)){
 		y = y + sign(vsp);
 	}
 		
-	if(vsp >= 0)
-		land = true;
+	if(vsp > 0 && !onground){
+		onground = true;
+		squish = 0.5
+	}
 		
 	ball_jump = 0;
 

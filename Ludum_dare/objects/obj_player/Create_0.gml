@@ -7,10 +7,12 @@ jspd = -6.25
 move = 0;
 max_spd = 3
 onground = false
-face = 0
+face = 1
+squish = 1;
 
 //Gameplay variables
 throw = false
+hold = false
 global.max_water_lvl = 100
 global.water_lvl = 0
 
@@ -33,6 +35,7 @@ right_key_press = keyboard_check_pressed(vk_right) || gamepad_button_check_press
 left_key_press = keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl);
 
 grab_key_press = keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0, gp_face2);
+grab_key_hold = keyboard_check(ord("X")) || gamepad_button_check(0, gp_face2);
 
 jump_key_hold = keyboard_check(ord("Z")) || gamepad_button_check(0, gp_face1);
 jump_key_press = keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(0, gp_face1);
