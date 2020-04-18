@@ -10,6 +10,7 @@ onground = false
 face = 0
 
 //Gameplay variables
+throw = false
 global.max_water_lvl = 100
 global.water_lvl = 0
 

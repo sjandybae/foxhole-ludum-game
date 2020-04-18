@@ -2,8 +2,17 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-if(grabbed == 0)
+if(grabbed == 0){
 	event_inherited();
+	
+	var tilt = abs(rot)
+	
+	if(abs(rot) >= 360)
+		rot = 0
+	
+	if(tilt > 30 && tilt < 330) && !place_meeting(x, y, obj_water)
+		global.water_lvl -= 0.5
+}
 
 else if(grabbed == 1){
 	
@@ -17,10 +26,10 @@ else if(grabbed == 1){
 	
 	image_xscale = pl.image_xscale;
 	
-	var _x = 4
+	//var _x = 4
 	
-	x = pl.x + (_x * pl.face) 
-	y = pl.y+10
+	x = pl.x //+ (_x * pl.face) 
+	y = pl.y-32
 	
 	//Tilting
 	if(abs(pl.hsp) > 2 )
@@ -29,7 +38,7 @@ else if(grabbed == 1){
 		rot = lerp(rot, 0, 0.1)
 		
 	//Dripping water
-	if(rot >= 30)
+	if(abs(rot) >= 30)
 		global.water_lvl -= 0.5
 	
 	persistent = true	
