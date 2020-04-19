@@ -2463,6 +2463,14 @@
             }
         },
         {
+            "Key": "c97887e2-fef5-4f44-836e-8f9ba95e4d18",
+            "Value": {
+                "id": "8af21abd-2bcc-492f-9f98-d73b6c19da62",
+                "resourcePath": "sprites\\spr_water_waves\\spr_water_waves.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ca5c43d1-4e59-49b1-92d3-9e00a5705c36",
             "Value": {
                 "id": "c1eee1b9-638a-4501-9cda-c106906f7ccd",
