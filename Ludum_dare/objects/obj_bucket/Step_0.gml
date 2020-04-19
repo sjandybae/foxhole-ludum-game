@@ -40,9 +40,11 @@ else if(grabbed == 1){
 		rot = lerp(rot, 0, 0.1)
 		
 	//Dripping water
-	if(abs(rot) >= 30)
+	if(abs(rot) >= 30){
 		global.water_lvl -= 0.5
-	
+		if(global.water_lvl > 0)
+			instance_create_depth(x,y,depth+1,obj_droplet)
+	}
 	persistent = true	
 	
 }

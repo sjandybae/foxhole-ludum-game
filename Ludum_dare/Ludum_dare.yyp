@@ -871,6 +871,14 @@
             }
         },
         {
+            "Key": "507a31b0-42e1-46ac-9050-056fb9e42b17",
+            "Value": {
+                "id": "fd60a8b6-a6b7-4a64-b1a7-7dcdaabb4c6b",
+                "resourcePath": "sounds\\Clatter1\\Clatter1.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "50813657-f84b-4bef-9454-c49a023b0c04",
             "Value": {
                 "id": "639ef6dc-6470-425c-9ca3-6aff4f264b62",
@@ -1183,6 +1191,14 @@
             }
         },
         {
+            "Key": "6e04efae-9a48-49c3-a32d-214294c63bb2",
+            "Value": {
+                "id": "5785bb80-b53c-4761-a037-960f01b3227c",
+                "resourcePath": "sounds\\Bonk2\\Bonk2.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "6e16aa54-eb48-44da-93c3-dd67cdbf9820",
             "Value": {
                 "id": "b69c80aa-9492-4293-972f-050b0320bf32",
@@ -1487,6 +1503,14 @@
             }
         },
         {
+            "Key": "8af0e7f9-2a13-47d9-b165-4fedfa515bf5",
+            "Value": {
+                "id": "4063b5b0-63f8-4208-a8f8-4f2491ab75ff",
+                "resourcePath": "sounds\\sound105\\sound105.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8af9492e-368c-4444-9982-9e91bec09d2a",
             "Value": {
                 "id": "afd6a48f-9af7-4607-ae1f-0a0c0b26eb2c",
@@ -1719,6 +1743,14 @@
             }
         },
         {
+            "Key": "9ab0e8f0-aec1-4c53-874d-2861a9cb9152",
+            "Value": {
+                "id": "af6ab232-7c29-4bef-bccc-912304cd9a69",
+                "resourcePath": "objects\\object20\\object20.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9ad5c4b7-e298-4912-bd52-d0f045632540",
             "Value": {
                 "id": "f694b324-9b79-4e37-836c-ca10a9e89314",
@@ -1788,6 +1820,14 @@
                 "id": "925fe737-6801-4265-b99f-e345b23c9863",
                 "resourcePath": "views\\9e687503-0e85-4873-a27f-d676172f5844.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9f71bcf7-b6ba-41b4-ab2e-027ec889757a",
+            "Value": {
+                "id": "2cb66f7d-3b4f-41c7-8da0-0c8541293272",
+                "resourcePath": "sounds\\LongClatter1\\LongClatter1.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -2220,6 +2260,14 @@
                 "id": "8c6598a8-1833-423d-87ba-c131d6d58375",
                 "resourcePath": "scripts\\light_create_point\\light_create_point.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b8b118d7-713a-47a8-b191-d2adfcf862d3",
+            "Value": {
+                "id": "2150cf50-c735-494e-939d-9d5206890e1c",
+                "resourcePath": "objects\\obj_droplet\\obj_droplet.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2871,6 +2919,14 @@
             }
         },
         {
+            "Key": "e974ee82-04e4-42aa-a188-7476ca7b0d81",
+            "Value": {
+                "id": "66c97046-3a7d-4c21-9b21-c4fe2f7d2c23",
+                "resourcePath": "sounds\\Bonk1\\Bonk1.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "e9a4decf-ecbb-4be7-b0d1-184fe1023551",
             "Value": {
                 "id": "ee44fa56-23dd-4dc3-96e6-0f82c0040d79",
@@ -2959,6 +3015,14 @@
             }
         },
         {
+            "Key": "f5c04ef5-6e70-44d8-a38a-baf092f054c4",
+            "Value": {
+                "id": "49962e04-361c-4e63-8c17-a13aa80c114f",
+                "resourcePath": "views\\f5c04ef5-6e70-44d8-a38a-baf092f054c4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f60f589d-0d07-43e9-8db8-ed22b3a057e6",
             "Value": {
                 "id": "a1e713f7-7aa9-44b1-8683-2eee8b596394",
@@ -3011,6 +3075,14 @@
             "Value": {
                 "id": "2d185b86-a4c5-450e-8419-d72f6d0cd7d3",
                 "resourcePath": "sprites\\spr_smear_cactus\\spr_smear_cactus.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f9cbb553-79d8-4f99-b2de-18a60205d7e4",
+            "Value": {
+                "id": "ec3fbf34-52ac-4e83-bf91-c062fe51cee9",
+                "resourcePath": "sprites\\spr_droplet\\spr_droplet.yy",
                 "resourceType": "GMSprite"
             }
         },
