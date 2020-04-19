@@ -97,122 +97,15 @@ if(slide != w){
 if(global.pause == true){
 	draw_sprite_ext(screenshot, 0, 0, 0, 1, 1, 0, c_white, 1);
 	
-	/*draw_set_color(c_black);
+	draw_set_color(c_black);
 	draw_set_alpha(0.5)
 	draw_rectangle(0, 0, w, h, false);
 	
-	if(global.inv_space > 0){
-		draw_set_color(c_white);
-		draw_set_alpha(1)
-		
-	}
-	
-	draw_sprite_ext(spr_hud_border, 0, w/2, h/2, 2, 2, 0, c_white, 1);*/
 }
 
 
 //Drawing map
 
-
-//Full map
-if(global.cutscene == false && global.multiplayer_mode == false){
-#region
-if(global.pause == true){
-
-	draw_set_alpha(1)
-
-	minimap_width = 512
-	minimap_height = 512
-
-	column_minus = 10;
-	row_minus = 7;
-
-	minimap_x = (view_w)/2 + 64;
-	minimap_y = (view_h)/3
-	
-	minimap_left = 0
-	minimap_top = 0
-
-	draw_set_color(c_white)
-	draw_rectangle(minimap_x-2, minimap_y-2, minimap_x + minimap_width + 1, minimap_y + minimap_height + 1, false)
-
-	draw_sprite_part(spr_full_map, 0, minimap_left, minimap_top, minimap_width, minimap_height, minimap_x, minimap_y)
-
-
-	for(var j = 1; j<32; j++){
-	
-		for(var i = 1; i<32; i++){
-		
-			var cell = "column" + string(j) + "_" + "row" + string(i)
-		
-		
-			if(minimap_ds_map[? cell ] != 2)
-				draw_sprite( spr_map_empty, minimap_ds_map[? cell ], minimap_x + (j * 16), minimap_y + (i * 16) )
-			else
-				draw_sprite( spr_map_elements, 0, minimap_x + (j * 16), minimap_y + sin(global.wave_angle) + (i * 16) )
-
-		}
-	}
-
-	//Player position
-	draw_sprite_ext(spr_map_selected, 1, minimap_x + 16 * minimap_cell_column, minimap_y + 16 * minimap_cell_row, 1, 1, 0, c_white, 1 )
-
-}
-
-#endregion
-
-//Mini map
-
-#region
-else{
-	
-	//old row = 5, column = 7, column_minus = 3, row_minus = 2, width = 112, hieght = 80, 24, 8, 16, 8
-	/*
-	var scale = 2;
-	
-	draw_set_alpha(1)
-	
-	minimap_width = 80*scale
-	minimap_height = 48*scale
-	
-	column_minus = 2;
-	row_minus = 1;
-	
-	minimap_x = (view_w*2) - (minimap_width + 16);
-	minimap_y = 16
-	
-	
-	minimap_left = (minimap_cell_column - 2) * 16*scale
-	minimap_top = (minimap_cell_row - 1) * 16*scale
-
-	draw_set_color(c_white)
-	draw_rectangle(minimap_x-2, minimap_y-2, minimap_x + minimap_width + 1, minimap_y + minimap_height + 1, false)
-
-	draw_sprite_part_ext(spr_full_map, 0, minimap_left/scale, minimap_top/scale, minimap_width/scale, minimap_height/scale, minimap_x, minimap_y, 1*scale, 1*scale, c_white, 1)
-
-
-	for(var j = 0; j<5; j++){
-	
-		for(var i = 0; i<3; i++){
-		
-			var cell = "column" + string( j + minimap_cell_column - column_minus ) + "_" + "row" + string(i + minimap_cell_row - row_minus)
-		
-			
-			draw_sprite_ext( spr_map_empty, minimap_ds_map[? cell ], minimap_x + (j * 16*scale), minimap_y + (i * 16*scale), 1*scale, 1*scale, 0, c_white, 1 )
-				
-			
-
-		}
-	}
-
-	//Player position
-	draw_sprite_ext(spr_map_selected, 0, minimap_x + 16*scale + column_minus * 8*scale, minimap_y + 8*scale + row_minus * 8*scale, 1*scale, 1*scale, 0, c_white, abs(sin(global.wave_angle)))
-	*/
-	
-}
-
-#endregion
-}
 
 /*if(room_speed <= 10){
 	draw_set_color(c_white);

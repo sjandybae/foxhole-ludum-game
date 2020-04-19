@@ -7,25 +7,6 @@ if(angle >= pi*2)
 if(!land)
 	rot += (hsp + abs(vsp) * facing ) * -1.5
 
-/*if(grabbed == 0)
-	active = true
-else
-	active = false*/
-
-//Burning in fire
-/*if(place_meeting(x, y, obj_spark) && flamable == true && burning < 1){
-	burning += 0.002
-	if(burning == 0.002)
-		audio_play_sound(snd_fire_ball_hit, 1, 0)
-}*/
-
-/*if(burning > 0 && burning < 1 && in_water == false && place_meeting(x, y, obj_spark)){
-	CreateEffectDepth(obj_spark, x + lengthdir_x(random_range(sprite_width/(-2), sprite_width/2), rot) + random_range(-1, 1), y + lengthdir_y(random_range(sprite_height/(-2), sprite_height/2), rot) * image_xscale + random_range(-1, 1), self.depth - 1, c_white, false)
-	//CreateEffectDepth(obj_steam, x + lengthdir_x(random_range(sprite_width/(-2), sprite_width/2), rot) + random_range(-1, 1), y + lengthdir_y(random_range(sprite_height/(-2), sprite_height/2), rot) * image_xscale + random_range(-1, 1), self.depth, c_white, false)
-}*/
-
-if(burning >= 1)
-	burning = 1;
 
 //Bouncing squish
 	if(h_squish != 1)
@@ -76,11 +57,26 @@ if(grabbed ==  0)
 	if(land)
 		hsp = Approach(hsp, 0, weight/5)
 		
-	if(place_meeting(x, y, obj_water))
-		hsp = Approach(hsp, 0, weight/20)
+	//in water
+	if(place_meeting(x, y-8, obj_water)){
 		
-	if(!land && place_meeting(x, y, obj_water))
-		vsp = Approach(vsp, 2, 0.25)
+		if(global.water_lvl <= 50){
+			var _vsp = -8/max(1, (global.water_lvl)/2)
+			rot = Approach(rot, 0, 1)
+		}
+		else
+			var _vsp = 0.5
+		
+		hsp = Approach(hsp, 0, weight/50)
+		vsp = lerp(vsp, _vsp, 0.05)
+		
+		in_water = true
+	}
+	else
+		in_water = false
+		
+		
+		
 	
 	//Building potential energy
 	if(land == false){
