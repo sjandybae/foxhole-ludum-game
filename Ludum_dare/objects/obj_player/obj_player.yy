@@ -75,7 +75,7 @@
             "m_owner": "c5326350-172f-4e8e-aa25-c3f9561ff269"
         }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "c8311a98-dc0c-4460-be5f-a8f8884a4da4",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,

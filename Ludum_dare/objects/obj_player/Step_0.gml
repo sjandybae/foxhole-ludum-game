@@ -24,10 +24,6 @@ jump_key_release = keyboard_check_released(ord("Z")) || gamepad_button_check_rel
 #endregion
 
 
-//Hit box
-if crawl mask_index = spr_player_crawl
-else mask_index = spr_player
-
 
 //sprites
 squish = lerp(squish, 1, 0.11)
@@ -86,17 +82,23 @@ if(vsp < 0){
 //Crawling
 if(down_key && onground){
 	
-	if(down_key_press)
+	if(down_key_press){
 		squish = 0.8
+		vsp=-0.1
+	}
 	
+	mask_index = spr_player_crawl
 	crawl = true
 }
 else if(!down_key) && !place_meeting(x, y-4, obj_block) && crawl{
 	crawl = false
-	
-	//if(down_key_release)
-		squish = 0.8
+	mask_index = spr_player
+	squish = 0.8
 }
+
+//Hit box
+/*if crawl==true mask_index = spr_player_crawl
+else mask_index = spr_player*/
 	
 	
 //Collisions
@@ -135,8 +137,8 @@ if (place_meeting(x, y+vsp, obj_block)){
 	}
 		
 	if(vsp > 0 && !onground){
+		squish = 0.7
 		onground = true;
-		squish = 0.5
 	}
 		
 	ball_jump = 0;
@@ -161,7 +163,7 @@ if(instance_place(x, y-1, obj_water)){
 }
 else{
 	
-	if crawl max_spd = 2
+	if crawl==true max_spd = 2
 	else max_spd = 3
 	max_vsp = 9.8
 }
