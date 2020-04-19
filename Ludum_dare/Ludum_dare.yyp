@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "0a5cac65-17af-4ca9-bb1a-7336976e6969",
+            "Value": {
+                "id": "1d282b22-c4ac-4456-b549-8958781d4cbb",
+                "resourcePath": "objects\\obj_enemy_a\\obj_enemy_a.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0ac59313-0faa-4348-beac-7b8d9834d7d2",
             "Value": {
                 "id": "481251ce-1384-41ff-9815-d1f60a05541c",
@@ -428,6 +436,14 @@
                 "id": "ca4fdae4-366a-4df4-9c5b-8837c2e676b5",
                 "resourcePath": "sprites\\spr_trees\\spr_trees.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "271ae00c-ee50-41d7-b968-8d61616b4579",
+            "Value": {
+                "id": "ab0ee924-db2a-4d03-bbe5-2710fa487b39",
+                "resourcePath": "sounds\\snd_bubbling\\snd_bubbling.yy",
+                "resourceType": "GMSound"
             }
         },
         {
