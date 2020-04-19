@@ -10,8 +10,10 @@ if(grabbed == 0){
 	if(abs(rot) >= 360)
 		rot = 0
 	
-	if(tilt > 30 && tilt < 330) && !place_meeting(x, y, obj_water)
+	if(tilt > 30 && tilt < 330) && !place_meeting(x, y, obj_water) && global.water_lvl > 0{
+		instance_create_depth(x,y,depth+1,obj_droplet)
 		global.water_lvl -= 0.5
+	}
 		
 	depth = obj_player.depth - 1
 }
