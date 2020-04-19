@@ -18,6 +18,10 @@ if(grabbed == 0){
 	}
 		
 	depth = obj_player.depth - 1
+	
+	if(irandom_range(0, 1) == 0) bounce_sound = Bonk1
+		else bounce_sound = Bonk2
+	
 }
 
 else if(grabbed == 1){

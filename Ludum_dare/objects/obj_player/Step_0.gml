@@ -80,6 +80,8 @@ if(coyote > 0 && jump_buffer > 0){ //Initate the actual jump
 	coyote = 0 //Reset coyote
 	vsp = jspd
 	squish = 1.5
+	audio_sound_pitch(snd_fox_jump, random_range(0.9, 1.1))
+	audio_play_sound(snd_fox_jump, 1, 0)
 }
 	
 if(vsp < 0){ //Jump truncation

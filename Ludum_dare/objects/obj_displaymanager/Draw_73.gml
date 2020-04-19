@@ -1,32 +1,80 @@
 
 
+//var wh_margin = 32
+
 var pl_x = obj_player.x
 var wh_x = obj_whale.x
+var bk_x = obj_bucket.x
 
 
 var pl_y = obj_player.y
-var wh_y = obj_whale.y
+var wh_y = obj_whale.y-96
+var bk_y = obj_bucket.y
 
-//cursor X
+
+//whale cursor
+#region
+//wh_cursor X
 if(pl_x <= wh_x){
 	
-	cur_x = lerp(cur_x, camera_get_view_x(view)+view_width, 1)
-	cur_x = clamp(cur_x, camera_get_view_x(view)+view_width, wh_x)
+	wh_cur_x = lerp(wh_cur_x, (camera_get_view_x(view)+view_width), 1)
+	wh_cur_x = clamp(wh_cur_x, camera_get_view_x(view)+view_width, wh_x)
 }
 else{
-	cur_x = lerp(cur_x, wh_x, 1)
-	cur_x = clamp(cur_x, wh_x, camera_get_view_x(view))
+	wh_cur_x = lerp(wh_cur_x, max(wh_x, camera_get_view_x(view)), 1)
+	//wh_cur_x = clamp(wh_cur_x, wh_x, camera_get_view_x(view))
 }
 
-//cursor Y
-if(pl_y < wh_y){
+//wh_cursor Y
+if(camera_get_view_y(view) < wh_y){
 	
-	cur_y = lerp(cur_y, camera_get_view_y(view)+view_height, 1)
-	cur_y = clamp(cur_y, camera_get_view_y(view)+view_height, wh_y)
+	wh_cur_y = lerp(wh_cur_y, camera_get_view_y(view)+view_height, 1)
+	wh_cur_y = clamp(wh_cur_y, camera_get_view_y(view)+view_height, wh_y)
 }
 else{
-	cur_y = lerp(cur_y, camera_get_view_y(view), 1)
-	cur_y = clamp(cur_y, wh_y, camera_get_view_y(view))
+	wh_cur_y = lerp(wh_cur_y, camera_get_view_y(view), 1)
+	wh_cur_y = clamp(wh_cur_y, wh_y, camera_get_view_y(view))
 }
 
-draw_sprite(spr_cursors, 0, cur_x, cur_y)
+var wh_cur_alpha = abs((wh_cur_x-wh_x) + (wh_cur_y-wh_y))/200
+
+draw_sprite_ext(spr_cursors, 0, wh_cur_x, wh_cur_y, 1, 1, 0, c_white, wh_cur_alpha)
+
+#endregion
+
+
+
+//Bucket wh_cursor
+#region
+//wh_cursor X
+if(pl_x <= bk_x){
+	
+	bk_cur_x = lerp(bk_cur_x, (camera_get_view_x(view)+view_width), 1)
+	bk_cur_x = clamp(bk_cur_x, camera_get_view_x(view)+view_width, bk_x)
+}
+else{
+	bk_cur_x = lerp(bk_cur_x, max(bk_x, camera_get_view_x(view)), 1)
+	//wh_bk_cur_x = clamp(wh_bk_cur_x, wh_x, camera_get_view_x(view))
+}
+
+//wh_bk_cursor Y
+if(camera_get_view_y(view) < bk_y){
+	
+	bk_cur_y = lerp(bk_cur_y, camera_get_view_y(view)+view_height, 1)
+	bk_cur_y = clamp(bk_cur_y, camera_get_view_y(view)+view_height, bk_y)
+}
+else{
+	bk_cur_y = lerp(bk_cur_y, camera_get_view_y(view), 1)
+	bk_cur_y = clamp(bk_cur_y, bk_y, camera_get_view_y(view))
+}
+
+var bk_cur_alpha = abs((bk_cur_x-bk_x) + (bk_cur_y-bk_y))/200
+
+draw_sprite_ext(spr_cursors, 1, bk_cur_x, bk_cur_y, 1, 1, 0, c_white, bk_cur_alpha)
+
+#endregion
+
+
+
+
+
