@@ -1,5 +1,5 @@
-global.music_volume = 0.35;
-global.music_volume_set = 0.35
+global.music_volume = 0.21;
+global.music_volume_set = 0.21
 global.current_music = 0
 global.new_track = false;
 
@@ -8,7 +8,7 @@ if(global.multiplayer_mode){
 	global.current_music = snd_a1_intro
 }
 else
-	global.current_music = snd_first_zone
+	global.current_music = snd_save_the_whale
 
 prev_track = false
 
