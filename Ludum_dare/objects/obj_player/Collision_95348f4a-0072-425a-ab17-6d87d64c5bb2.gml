@@ -41,7 +41,7 @@ if(grab_key_press && other.grabbed == 1){
 }
 
 //Picking up bucket
-else if(grab_key_hold && other.grabbed == 0 && throw == false ){
+else if(grab_key_hold && other.grabbed == 0 && throw == false && !crawl){
 	
 	other.rot = 0;
 	other.grabbed = 1
@@ -49,3 +49,16 @@ else if(grab_key_hold && other.grabbed == 0 && throw == false ){
 	hold = true
 	
 }
+
+//Nudgeing bucket
+if(other.grabbed == 0){
+	
+	if(crawl){
+		other.hsp = hsp*2
+	}
+	
+}
+
+
+
+

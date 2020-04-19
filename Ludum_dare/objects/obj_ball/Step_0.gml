@@ -4,7 +4,8 @@ angle += 0.3;
 if(angle >= pi*2)
 	angle = pi*(-2);
 
-rot += (hsp + abs(vsp) * facing ) * -1.5
+if(!land)
+	rot += (hsp + abs(vsp) * facing ) * -1.5
 
 /*if(grabbed == 0)
 	active = true
