@@ -1,4 +1,6 @@
-if(global.water_lvl < global.max_water_lvl){
+var tilt = abs(other.rot)
+
+if(global.water_lvl < global.max_water_lvl) && !(tilt > 30 && tilt < 330) {
 	
 	var scale = 0.15/image_xscale
 	
@@ -7,3 +9,5 @@ if(global.water_lvl < global.max_water_lvl){
 	
 	global.water_lvl += 0.5
 }
+
+

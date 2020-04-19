@@ -67,7 +67,7 @@ if(grabbed ==  0)
 		else
 			var _vsp = 0.5
 		
-		hsp = Approach(hsp, 0, weight/50)
+		hsp = Approach(hsp, 0, weight/40)
 		vsp = lerp(vsp, _vsp, 0.05)
 		
 		in_water = true

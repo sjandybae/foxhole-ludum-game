@@ -108,7 +108,11 @@ else if(!down_key) && !place_meeting(x, y-4, obj_block) && crawl{
 
 
 //Raising the roof
-
+if(grab_key_hold)
+	hold = true
+	
+else if(!collision_rectangle(x-8, y, x+8, y-48, obj_bucket, false, true))
+	hold = false
 
 	
 	
