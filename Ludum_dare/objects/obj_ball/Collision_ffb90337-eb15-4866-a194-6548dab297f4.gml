@@ -1,4 +1,4 @@
-/*if(reflected == false && grabbed = 0 && reflected == false && ((hsp != 0 || vsp != 0) || boomerang == true) && (other.hit == 0 || other.combo == 0) && other.possess == false){
+if(grabbed = 0 && ((hsp != 0 || vsp != 0)) && (other.hit == 0)){
 
 	//Enemey is hit
 	with(other){
@@ -13,16 +13,13 @@
 
 	//Damaging the enemey
 	
-	instance_create_depth(x, y, depth-1, obj_hit_spark)
+	instance_create_depth(x, y, depth-1, obj_splash)
 	
-	if(other.counter == false)
-		audio_play_sound(snd_kick, 1, 0)
-	else
-		audio_play_sound(snd_counter_hit, 1, 0)
+	audio_play_sound(snd_kick, 1, 0)
 
 	//Ball rebounding
-	hsp = -2 * facing;
-	vsp = -3;
+	hsp = hsp * (-0.8)
+	vsp = -6;
 
 
 }

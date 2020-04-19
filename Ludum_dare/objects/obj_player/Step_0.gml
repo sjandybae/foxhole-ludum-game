@@ -92,6 +92,7 @@ if(vsp < 0){ //Jump truncation
 if(down_key && onground){
 	
 	if(down_key_press){
+		hsp = 0
 		squish = 0.8
 		vsp=-0.1
 	}
@@ -105,9 +106,10 @@ else if(!down_key) && !place_meeting(x, y-4, obj_block) && crawl{
 	squish = 0.8
 }
 
-//Hit box
-/*if crawl==true mask_index = spr_player_crawl
-else mask_index = spr_player*/
+
+//Raising the roof
+
+
 	
 	
 //Collisions
@@ -172,7 +174,7 @@ if(instance_place(x, y-1, obj_water)){
 }
 else{
 	
-	if crawl==true max_spd = 2
+	if crawl==true max_spd = 1.5
 	else max_spd = 3
 	max_vsp = 9.8
 }

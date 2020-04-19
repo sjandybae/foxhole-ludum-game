@@ -10,8 +10,10 @@ if(grabbed == 0){
 	if(abs(rot) >= 360)
 		rot = 0
 	
-	if(tilt > 30 && tilt < 330) && !place_meeting(x, y, obj_water)
+	if(tilt > 30 && tilt < 330) && !place_meeting(x, y, obj_water) && global.water_lvl > 0 && land{
+		instance_create_depth(x,y,depth+1,obj_droplet)
 		global.water_lvl -= 0.5
+	}
 		
 	depth = obj_player.depth - 1
 }
@@ -30,8 +32,14 @@ else if(grabbed == 1){
 	
 	var _x = 2
 	
+	if(pl.crawl){
+		y = pl.y-8*pl.squish
+	}
+	else
+		y = pl.y-26*pl.squish
+	
 	x = pl.x - (_x * pl.face) 
-	y = pl.y-26*pl.squish
+	
 	
 	//Tilting
 	if(abs(pl.hsp) > 2 )
@@ -46,6 +54,11 @@ else if(grabbed == 1){
 			instance_create_depth(x,y,depth+1,obj_droplet)
 	}
 	persistent = true	
+	
+	
+	//Restoring squish
+	h_squish = Approach(h_squish, 1, 0.1)
+	v_squish = Approach(v_squish, 1, 0.1)
 	
 }
 
