@@ -4,5 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-draw_circle(x - 15, y - 15, 15, false)
-
+if (global.water_changed_timer > 0) {
+	draw_circle(x - 20, y - 20, 15, false)
+	global.water_changed_timer--;
+}
