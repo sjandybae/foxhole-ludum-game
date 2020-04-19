@@ -24,7 +24,6 @@ jump_key_release = keyboard_check_released(ord("Z")) || gamepad_button_check_rel
 #endregion
 
 
-
 //sprites
 squish = lerp(squish, 1, 0.11)
 
@@ -63,17 +62,23 @@ if(vsp >= max_vsp)
 
 
 //Jumping
-if(place_meeting(x, y+1, obj_block))
-	onground = true
+if(place_meeting(x, y+1, obj_block)) //Update onground
+	coyote = 6 // num of frames the game will allow you to jump after walking off a tile
 else
-	onground = false
+	coyote -= 1
+
+if(jump_key_press == true) //Register player input
+	jump_buffer = 15
+
+jump_buffer -= 1 //reduce the jump_buffer
 	
-if(onground == true && jump_key_press){
+if(coyote > 0 && jump_buffer > 0){ //Initate the actual jump
+	coyote = 0 //Reset coyote
 	vsp = jspd
 	squish = 1.5
 }
 	
-if(vsp < 0){
+if(vsp < 0){ //Jump truncation
 	if(jump_key_release)
 		vsp*=0.5;
 }

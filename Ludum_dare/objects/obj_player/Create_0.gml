@@ -6,7 +6,9 @@ grav = 0.25
 jspd = -6.25
 move = 0;
 max_spd = 3
-onground = false
+onground = false //No longer in use
+jump_buffer = 15 //jake
+coyote = 0 //jake
 face = 1
 squish = 1;
 
