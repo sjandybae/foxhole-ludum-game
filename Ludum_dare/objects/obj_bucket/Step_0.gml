@@ -43,17 +43,16 @@ else if(grabbed == 1){
 	
 	
 	//Tilting
-	if(abs(pl.hsp) > 2 )
+	if(abs(pl.hsp) > 2)
 		rot = Approach(rot, 45*pl.face, 0.5)
 	else
 		rot = lerp(rot, 0, 0.1)
 		
 	//Dripping water
-	if(abs(rot) >= 30){
+	if(abs(rot) >= 30 && global.water_lvl > 0){
 		global.water_changed_timer = 60;
 		global.water_lvl -= 0.5
-		if(global.water_lvl > 0)
-			instance_create_depth(x,y,depth+1,obj_droplet)
+		instance_create_depth(x,y,depth+1,obj_droplet)
 	}
 	persistent = true	
 	
