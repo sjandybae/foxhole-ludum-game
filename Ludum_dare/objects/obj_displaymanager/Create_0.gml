@@ -69,4 +69,11 @@ for(var i = 1; i < room_last; i++){
 
 
 
+//cursor
+cur_x = 0;
+cur_y = 0;
+
+
+
+
 
