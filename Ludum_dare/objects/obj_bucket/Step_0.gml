@@ -30,8 +30,14 @@ else if(grabbed == 1){
 	
 	var _x = 2
 	
+	if(pl.crawl){
+		y = pl.y-8*pl.squish
+	}
+	else
+		y = pl.y-26*pl.squish
+	
 	x = pl.x - (_x * pl.face) 
-	y = pl.y-26*pl.squish
+	
 	
 	//Tilting
 	if(abs(pl.hsp) > 2 )
