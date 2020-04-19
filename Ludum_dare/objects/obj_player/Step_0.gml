@@ -53,7 +53,6 @@ if(onground && move == 0)
 
 
 
-
 //verticle movement
 vsp = vsp + grav
 
