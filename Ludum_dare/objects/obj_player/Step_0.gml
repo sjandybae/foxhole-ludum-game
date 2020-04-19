@@ -61,11 +61,16 @@ if(vsp >= max_vsp)
 	vsp = max_vsp
 
 
+
 //Jumping
-if(place_meeting(x, y+1, obj_block)) //Update onground
+if(place_meeting(x, y+1, obj_block)){ //Update onground
 	coyote = 6 // num of frames the game will allow you to jump after walking off a tile
-else
+	onground = true
+}
+else{
 	coyote -= 1
+	onground = false
+}
 
 if(jump_key_press == true) //Register player input
 	jump_buffer = 15
