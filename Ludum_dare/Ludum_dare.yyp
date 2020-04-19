@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "1b0f9490-04b4-4559-93dc-859cb1aff189",
+            "Value": {
+                "id": "39b05c85-fe25-44f1-acbc-4c12e533d8f1",
+                "resourcePath": "objects\\obj_whale\\obj_whale.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1b2f4cb7-266b-4fb3-9dce-906e199c2934",
             "Value": {
                 "id": "563b40f0-3c8f-4f2b-a423-372a32ad0cdb",
@@ -2971,6 +2979,14 @@
             "Value": {
                 "id": "6fc14380-01bb-47a4-bd53-4ff40383557b",
                 "resourcePath": "sprites\\spr_large_rocks\\spr_large_rocks.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f706e156-a1f2-4043-9415-4c26250537ba",
+            "Value": {
+                "id": "596fbaac-7ed4-4188-9a5f-2e577749ec6a",
+                "resourcePath": "sprites\\spr_whale\\spr_whale.yy",
                 "resourceType": "GMSprite"
             }
         },
