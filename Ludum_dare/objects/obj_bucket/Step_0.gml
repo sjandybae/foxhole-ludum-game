@@ -11,6 +11,7 @@ if(grabbed == 0){
 		rot = 0
 	
 	if(tilt > 30 && tilt < 330) && !place_meeting(x, y, obj_water) && global.water_lvl > 0 && land{
+		
 		instance_create_depth(x,y,depth+1,obj_droplet)
 		global.water_changed_timer = 60;
 		global.water_lvl -= 0.5
