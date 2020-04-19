@@ -4,3 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
+draw_circle(x - 15, y - 15, 15, false)
+

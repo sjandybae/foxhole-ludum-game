@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "4bde12dc-af00-4eea-a8da-8742b3cfbdcb",
+            "Value": {
+                "id": "3553f621-d0fb-4d0e-8497-829182b9c50c",
+                "resourcePath": "sprites\\spr_whale_ui\\spr_whale_ui.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4cee1c92-18f5-40ce-980b-804e2294939d",
             "Value": {
                 "id": "7eb8fb7f-602c-4ef8-ba60-032fdc6efca2",
