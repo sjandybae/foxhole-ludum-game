@@ -13,3 +13,17 @@ draw_healthbar(_x + 3, _y2-86, _x + 12, _y2, 100 - (global.whale_hp / global.wha
 draw_sprite(spr_whale_ui, 0, _x, display_get_gui_height() - 80)
 
 
+if (global.whale_hp / global.whale_max_hp < 0.3) alert_timer++;
+else alert_timer = 0
+
+
+if (alert_timer > 30) {
+	draw_set_font(global.fnt_normal_text);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_middle);
+	draw_set_color(c_orange);	
+	draw_text(_x + 42, _y2 + 14, "HELP!");
+}
+if (alert_timer > 60) alert_timer = 0;
+
+

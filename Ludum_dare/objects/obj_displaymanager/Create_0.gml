@@ -76,6 +76,9 @@ wh_cur_y = 0;
 bk_cur_x = 0;
 bk_cur_y = 0;
 
+//UI timers
+alert_timer = 0;
+
 
 
 
