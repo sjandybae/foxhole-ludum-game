@@ -33,7 +33,7 @@ if(place_meeting(x,y,obj_player)){//player bounce
 	obj_player.bucket_knocked = true
 	obj_player.hsp = abs(obj_player.hsp)/obj_player.hsp * -5
 	obj_player.vsp = -6
-	state_timer = 60*3
+	state_timer = 45
 	mode = "balled"
 }
 
