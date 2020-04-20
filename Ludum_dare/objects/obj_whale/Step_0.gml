@@ -1,3 +1,6 @@
+//Day passing...
+global.day_timer -= 100;
+
 //Draining whale hp
 global.whale_hp -= 0.1
 
@@ -41,5 +44,13 @@ if(global.whale_hp <= 0){
 		timeline_running = true
 	}
 }
-	
 
+//victory
+if(global.day_timer <= 0){
+	
+	with(obj_displaymanager){
+		timeline_speed = 0.007
+		timeline_index = tim_victory
+		timeline_running = true
+	}
+}
