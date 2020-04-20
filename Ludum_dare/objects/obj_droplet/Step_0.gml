@@ -9,4 +9,3 @@ if(timer < 0)
 image_angle = point_direction(x, y, x + dx, y + dy)
 	
 image_alpha -= 0.05
-	
