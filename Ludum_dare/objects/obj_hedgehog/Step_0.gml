@@ -25,7 +25,7 @@ if(mode == "balled"){
 
 //IMPORTANT GETTING HIT WITH BUCKET BALLS HOG
 
-if(place_meeting(x,y,obj_player)){//player bounce
+if(place_meeting(x,y,obj_player) && obj_player.vsp > -1){//player bounce
 	obj_player.vsp = -3
 	//PLAYER DROP BUCKET
 	//obj_player.hsp = lerp(x, obj_player.x, 0)	//IMPORTANT, PLATER HORIZONTAL KNOCKBACK
