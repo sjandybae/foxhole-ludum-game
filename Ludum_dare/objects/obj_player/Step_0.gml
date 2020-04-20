@@ -122,7 +122,7 @@ if(down_key && onground){
 	mask_index = spr_player_crawl
 	crawl = true
 }
-else if(!down_key) && !place_meeting(x, y-4, obj_block) && crawl{
+else if(!down_key) && !place_meeting(x, y-16, obj_block) && crawl{
 	crawl = false
 	mask_index = spr_player
 	squish = 0.8
