@@ -1,5 +1,7 @@
 //pal_swap_init_system(shd_pal_swapper);
 
+image_speed = 0;
+
 ideal_width = 0
 ideal_height = 360
 

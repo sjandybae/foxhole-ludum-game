@@ -1,0 +1,1 @@
+scr_slide_transition(TRANS_MODE.GOTO, rm_lvl1)
