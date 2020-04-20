@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(place_meeting(x,y,obj_bucket)){
 	obj_bucket.hsp = abs(obj_bucket.hsp)/obj_bucket.hsp * -5
-	obj_bucket.vsp = -6
+	obj_bucket.vsp = -6*sign(image_yscale)
 }
 
 
