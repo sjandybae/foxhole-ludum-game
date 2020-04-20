@@ -80,7 +80,7 @@ if (place_meeting(x, y+vsp, obj_water) && !place_meeting(x, y-1, obj_water) && !
 }
 
 //Jumping
-var platform = instance_place(x, y+vsp, obj_jumpthrough);
+var platform = place_meeting(x, y+1, obj_jumpthrough) && !place_meeting(x, y, obj_jumpthrough);
 
 if(place_meeting(x, y+1, obj_block) || platform){ //Update onground
 	coyote = 6 // num of frames the game will allow you to jump after walking off a tile
@@ -92,7 +92,7 @@ else{
 }
 
 if(jump_key_press == true) //Register player input
-	jump_buffer = 15
+	jump_buffer = 5
 
 jump_buffer -= 1 //reduce the jump_buffer
 	
