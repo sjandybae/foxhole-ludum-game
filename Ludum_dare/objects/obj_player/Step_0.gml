@@ -59,8 +59,13 @@ vsp = vsp + grav
 if(vsp >= max_vsp)
 	vsp = max_vsp
 
-if (place_meeting(x, y+vsp, obj_water) && !place_meeting(x, y-1, obj_water) && !audio_is_playing(snd_player_splash)) audio_play_sound(snd_player_splash, 1, 0)
-
+if (place_meeting(x, y+vsp, obj_water) && !place_meeting(x, y-1, obj_water) && !audio_is_playing(snd_player_splash)){
+	
+	for(var i = 0; i <= 6; i++)
+		instance_create_depth(x, y-8, depth-1,obj_droplet)
+	
+	audio_play_sound(snd_player_splash, 1, 0)
+}
 
 //Jumping
 if(place_meeting(x, y+1, obj_block)){ //Update onground
