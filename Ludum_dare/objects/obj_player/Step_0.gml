@@ -238,5 +238,7 @@ else{
 }
 
 
-
+if(bucket_knocked == true && hold==false){
+	bucket_knocked = false
+}
 

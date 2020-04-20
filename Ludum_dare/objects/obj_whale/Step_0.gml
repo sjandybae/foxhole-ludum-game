@@ -1,5 +1,5 @@
 //Day passing...
-global.day_timer -= 50;
+global.day_timer -= 1;
 
 //Draining whale hp
 global.whale_hp -= 0.1

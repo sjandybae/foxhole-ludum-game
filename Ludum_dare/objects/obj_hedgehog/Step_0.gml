@@ -6,7 +6,7 @@ event_inherited();
 
 if(mode == "passive"){
 	hsp = 1 * face
-	if(place_meeting(x+hsp,y,obj_block)) || (!place_meeting(x+hsp-16,y+16,obj_block) && place_meeting(x,y+16,obj_block)){//Wallbump
+	if(place_meeting(x+hsp,y,obj_block)) || (!place_meeting(x+hsp*16,y+16,obj_block) && place_meeting(x,y+16,obj_block)){//Wallbump
 		 hsp = 0
 		 face *= -1
 		 vsp -= 1
@@ -25,7 +25,7 @@ if(mode == "balled"){
 
 //IMPORTANT GETTING HIT WITH BUCKET BALLS HOG
 
-if(place_meeting(x,y,obj_player)){//player bounce
+if(place_meeting(x,y,obj_player) && obj_player.vsp > -1){//player bounce
 	obj_player.vsp = -3
 	//PLAYER DROP BUCKET
 	//obj_player.hsp = lerp(x, obj_player.x, 0)	//IMPORTANT, PLATER HORIZONTAL KNOCKBACK
@@ -33,7 +33,7 @@ if(place_meeting(x,y,obj_player)){//player bounce
 	obj_player.bucket_knocked = true
 	obj_player.hsp = abs(obj_player.hsp)/obj_player.hsp * -5
 	obj_player.vsp = -6
-	state_timer = 60*3
+	state_timer = 45
 	mode = "balled"
 }
 
