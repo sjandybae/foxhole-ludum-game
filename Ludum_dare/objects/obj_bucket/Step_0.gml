@@ -22,7 +22,13 @@ if(grabbed == 0){
 	if(irandom_range(0, 1) == 0) bounce_sound = Bonk1
 		else bounce_sound = Bonk2
 	
-	if (place_meeting(x, y+vsp, obj_water) && !place_meeting(x, y-1, obj_water) && !audio_is_playing(snd_bucket_splash)) audio_play_sound(snd_bucket_splash, 1, 0)
+	if (place_meeting(x, y+vsp, obj_water) && !place_meeting(x, y-1, obj_water) && !audio_is_playing(snd_bucket_splash)){
+		
+		for(var i = 0; i <= 4; i++)
+			instance_create_depth(x, y, depth-1,obj_droplet)
+		
+		audio_play_sound(snd_bucket_splash, 1, 0)
+	}
 }
 
 else if(grabbed == 1){
