@@ -59,7 +59,13 @@ vsp = vsp + grav
 if(vsp >= max_vsp)
 	vsp = max_vsp
 
-
+if (place_meeting(x, y+vsp, obj_water) && !place_meeting(x, y-1, obj_water) && !audio_is_playing(snd_player_splash)){
+	
+	for(var i = 0; i <= 6; i++)
+		instance_create_depth(x, y-8, depth-1,obj_droplet)
+	
+	audio_play_sound(snd_player_splash, 1, 0)
+}
 
 //Jumping
 if(place_meeting(x, y+1, obj_block)){ //Update onground
@@ -80,6 +86,10 @@ if(coyote > 0 && jump_buffer > 0){ //Initate the actual jump
 	coyote = 0 //Reset coyote
 	vsp = jspd
 	squish = 1.5
+	
+	if(place_meeting(x,y,obj_water)) audio_sound_pitch(snd_fox_jump, random_range(0.5, 0.7))
+	else audio_sound_pitch(snd_fox_jump, random_range(0.9, 1.1))
+	audio_play_sound(snd_fox_jump, 1, 0)
 }
 	
 if(vsp < 0){ //Jump truncation
@@ -108,7 +118,11 @@ else if(!down_key) && !place_meeting(x, y-4, obj_block) && crawl{
 
 
 //Raising the roof
-
+if(grab_key_hold)
+	hold = true
+	
+else if(!collision_rectangle(x-8, y, x+8, y-48, obj_bucket, false, true))
+	hold = false
 
 	
 	
@@ -150,6 +164,7 @@ if (place_meeting(x, y+vsp, obj_block)){
 	if(vsp > 0 && !onground){
 		squish = 0.7
 		onground = true;
+		audio_play_sound(snd_grass_step, 1, 0)
 	}
 		
 	ball_jump = 0;

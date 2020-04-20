@@ -100,7 +100,13 @@ if(global.pause == true){
 	draw_set_color(c_black);
 	draw_set_alpha(0.5)
 	draw_rectangle(0, 0, w, h, false);
-	
+
+	draw_set_alpha(1)	
+	draw_set_font(global.fnt_normal_text);
+	draw_set_halign(fa_middle);
+	draw_set_valign(fa_middle);
+	draw_set_color(c_white);
+	draw_text(w/2, h/2, "PAUSED");
 }
 
 

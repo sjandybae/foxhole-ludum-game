@@ -11,11 +11,24 @@ if(grabbed == 0){
 		rot = 0
 	
 	if(tilt > 30 && tilt < 330) && !place_meeting(x, y, obj_water) && global.water_lvl > 0 && land{
+		
 		instance_create_depth(x,y,depth+1,obj_droplet)
+		global.water_changed_timer = 60;
 		global.water_lvl -= 0.5
 	}
 		
 	depth = obj_player.depth - 1
+	
+	if(irandom_range(0, 1) == 0) bounce_sound = Bonk1
+		else bounce_sound = Bonk2
+	
+	if (place_meeting(x, y+vsp, obj_water) && !place_meeting(x, y-1, obj_water) && !audio_is_playing(snd_bucket_splash)){
+		
+		for(var i = 0; i <= 4; i++)
+			instance_create_depth(x, y, depth-1,obj_droplet)
+		
+		audio_play_sound(snd_bucket_splash, 1, 0)
+	}
 }
 
 else if(grabbed == 1){
@@ -42,16 +55,16 @@ else if(grabbed == 1){
 	
 	
 	//Tilting
-	if(abs(pl.hsp) > 2 )
+	if(abs(pl.hsp) > 2)
 		rot = Approach(rot, 45*pl.face, 0.5)
 	else
 		rot = lerp(rot, 0, 0.1)
 		
 	//Dripping water
-	if(abs(rot) >= 30){
+	if(abs(rot) >= 30 && global.water_lvl > 0){
+		global.water_changed_timer = 60;
 		global.water_lvl -= 0.5
-		if(global.water_lvl > 0)
-			instance_create_depth(x,y,depth+1,obj_droplet)
+		instance_create_depth(x,y,depth+1,obj_droplet)
 	}
 	persistent = true	
 	
@@ -61,6 +74,8 @@ else if(grabbed == 1){
 	v_squish = Approach(v_squish, 1, 0.1)
 	
 }
+
+
 
 
 

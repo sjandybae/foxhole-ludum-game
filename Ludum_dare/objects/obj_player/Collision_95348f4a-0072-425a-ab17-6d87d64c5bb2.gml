@@ -32,7 +32,8 @@ if(grab_key_press && other.grabbed == 1){
 		other.hsp = face*5
 		other.vsp = -6
 	}
-	
+
+	audio_play_sound(snd_throw, 1, 0)
 	hold = false
 	throw = true
 	

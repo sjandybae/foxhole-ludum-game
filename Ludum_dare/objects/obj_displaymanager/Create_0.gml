@@ -69,4 +69,17 @@ for(var i = 1; i < room_last; i++){
 
 
 
+//cursors
+wh_cur_x = 0;
+wh_cur_y = 0;
+
+bk_cur_x = 0;
+bk_cur_y = 0;
+
+//UI timers
+alert_timer = 0;
+
+
+
+
 
