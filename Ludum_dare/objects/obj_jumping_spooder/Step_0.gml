@@ -9,7 +9,7 @@ obj_timer -= 1
 if(obj_timer < 0){
 	if place_meeting(x,y+16, obj_block){
 		vsp = -7
-		hsp = 2 * -face
+		hsp = 2 * -face * sign(image_xscale)
 	}
 	obj_timer = 130
 }
