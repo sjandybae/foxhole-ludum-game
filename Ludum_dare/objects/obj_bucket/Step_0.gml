@@ -22,6 +22,7 @@ if(grabbed == 0){
 	if(irandom_range(0, 1) == 0) bounce_sound = Bonk1
 		else bounce_sound = Bonk2
 	
+	if (place_meeting(x, y+vsp, obj_water) && !place_meeting(x, y-1, obj_water) && !audio_is_playing(snd_bucket_splash)) audio_play_sound(snd_bucket_splash, 1, 0)
 }
 
 else if(grabbed == 1){
@@ -67,6 +68,8 @@ else if(grabbed == 1){
 	v_squish = Approach(v_squish, 1, 0.1)
 	
 }
+
+
 
 
 
