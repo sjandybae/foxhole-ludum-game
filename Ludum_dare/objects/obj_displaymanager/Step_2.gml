@@ -50,6 +50,14 @@ if(instance_exists(obj_whale))
 
 //Cutscene stuff
 
+if(timeline_index == tim_prologue){
+	
+	if keyboard_check(vk_anykey)
+		timeline_speed = 0.05
+	else
+		timeline_speed = 0.002
+}
+
 cut_alpha = lerp(cut_alpha, alpha_approach, 0.05)
 
 
