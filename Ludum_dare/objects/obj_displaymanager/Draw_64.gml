@@ -22,13 +22,14 @@ draw_set_alpha(1)
 //buttons
 var _x = 8
 var _y = 8
+if(instance_exists(obj_player)) {
+	if(obj_player.state == "normal")
+		var ind = 0
+	else
+		var ind = 1
 
-if(state == "normal")
-	var ind = 0
-else
-	var ind = 1
-
-draw_sprite_ext(spr_buttons, ind, _x, _y, 2, 2, 0, c_white, 1)
+	draw_sprite_ext(spr_buttons, ind, _x, _y, 2, 2, 0, c_white, 1)
+}
 
 
 //UI coords
@@ -53,12 +54,10 @@ draw_sprite(spr_whale_ui, 0, _x, display_get_gui_height() - 80)
 if (global.whale_hp / global.whale_max_hp < 0.3) alert_timer++;
 else alert_timer = 0
 
-
-
-	draw_set_font(global.fnt_normal_text);
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_middle);
-	draw_set_color(c_orange);
+draw_set_font(global.fnt_normal_text);
+draw_set_halign(fa_left);
+draw_set_valign(fa_middle);
+draw_set_color(c_orange);
 
 if (global.happy_timer > 0) {
 	global.happy_timer--;

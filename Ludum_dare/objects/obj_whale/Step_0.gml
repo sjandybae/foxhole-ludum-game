@@ -1,8 +1,8 @@
 //Day passing...
-global.day_timer -= 10;
+global.day_timer -= 1;
 
 //Draining whale hp
-global.whale_hp -= 0.1
+global.whale_hp -= 5.1
 
 global.whale_hp = clamp(global.whale_hp, 0, global.whale_max_hp)
 
