@@ -189,13 +189,18 @@ if(mode != TRANS_MODE.OFF){
 				mode = TRANS_MODE.INTRO;
 				room_goto(target);
 				
+				with(obj_displaymanager){
+					cut_alpha = 0
+					alpha_approach = 0;	
+				}
+				
 				/*if(instance_exists(obj_room_target)){
 					obj_player.x = obj_room_target	
 				}*/
 				
 				//obj_player.x = obj_room_door.x
 				//obj_player.y = obj_room_door.y
-				//break;
+				break;
 			}
 			
 			case TRANS_MODE.RESTART:

@@ -1,3 +1,5 @@
+if(instance_exists(obj_whale)){
+
 //UI coords
 var _x = 50
 var _y = 50
@@ -30,6 +32,19 @@ if (global.happy_timer > 0) {
 	draw_text(_x + 44, _y2 + 14, "HELP!");
 }
 if (alert_timer > 60) alert_timer = 0;
+
+}
+
+
+//Prologue
+if(timeline_running && timeline_index == tim_prologue){
+
+	draw_sprite_ext(spr_prologue, image_index, 0, 0, 1, 1, 0, c_white, cut_alpha)
+	
+	draw_set_alpha(1)	
+	
+}
+
 
 //gameover screen
 if(timeline_running && timeline_index == tim_game_over){

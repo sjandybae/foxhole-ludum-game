@@ -1,4 +1,4 @@
-
+if(instance_exists(obj_player)){
 
 var wh_margin = 16
 
@@ -80,7 +80,7 @@ draw_sprite_ext(spr_cursors, 1, bk_cur_x, bk_cur_y, 1, 1, 0, c_white, bk_cur_alp
 
 #endregion
 
-
+}
 
 
 
