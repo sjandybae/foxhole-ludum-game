@@ -72,3 +72,21 @@ if(timeline_running && timeline_index == tim_game_over){
 	
 }
 
+//victory screen
+if(timeline_running && timeline_index == tim_victory){
+
+	var w = display_get_gui_width()
+	var h = display_get_gui_height()
+
+	draw_set_alpha(cut_alpha)	
+	
+	draw_set_font(global.fnt_normal_text);
+	draw_set_halign(fa_middle);
+	draw_set_valign(fa_middle);
+	draw_set_color(c_white);
+	draw_text(w/2, h/2, "You survived the day!");
+	
+	draw_set_alpha(1)	
+	
+}
+
