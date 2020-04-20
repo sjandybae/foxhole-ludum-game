@@ -8,7 +8,8 @@
         "31f25103-b887-4c53-bf51-a32cbc14f971",
         "6a556b6f-9e85-4820-a96b-dd326afdb4f0",
         "7f3e03b0-acb8-4885-a0b5-47daa6a05f67",
-        "a42847b2-3eb3-4b12-8984-4f5516161370"
+        "a42847b2-3eb3-4b12-8984-4f5516161370",
+        "cac8c9c7-c77b-475e-8349-5dbcf5071dc2"
     ],
     "filterType": "GMSound",
     "folderName": "Music",

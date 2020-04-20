@@ -13,7 +13,7 @@ if(!audio_is_playing(global.current_music) && !audio_is_playing(snd_a1_loop)){
 }
 	
 //changing tracks
-/*if(changing_music == true && global.multiplayer_mode==false){
+if(changing_music == true){
 
 	timeline_index = tim_music_change
 	timeline_speed = 0.025
@@ -23,4 +23,4 @@ if(!audio_is_playing(global.current_music) && !audio_is_playing(snd_a1_loop)){
 else{
 	timeline_running = false
 	timeline_position = 0	
-}*/
+}
