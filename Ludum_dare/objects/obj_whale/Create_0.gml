@@ -13,6 +13,6 @@ emotion = "normal"
 
 spd = 0.04
 
-
+victory = false
 
 depth = obj_player.depth+1

@@ -1,5 +1,5 @@
 //Day passing...
-global.day_timer -= 1;
+global.day_timer -= 10;
 
 //Draining whale hp
 global.whale_hp -= 0.1
@@ -48,11 +48,13 @@ if(global.whale_hp <= 0 && global.game_over == false){
 }
 
 //victory
-if(global.day_timer <= 0){
+if(global.day_timer <= 0 && victory == false){
 	
 	with(obj_displaymanager){
+		timeline_position = 0
 		timeline_speed = 0.007
 		timeline_index = tim_victory
 		timeline_running = true
+		victory = true
 	}
 }
