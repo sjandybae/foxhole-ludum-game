@@ -639,6 +639,14 @@
             }
         },
         {
+            "Key": "346143b7-c134-426f-bc3b-2c32aa716f2e",
+            "Value": {
+                "id": "39b20d82-891c-483c-8ece-e00bdb62b7ae",
+                "resourcePath": "timelines\\tim_epilogue\\tim_epilogue.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
             "Key": "35db5b05-1b62-4f15-bdaf-9352521a6fda",
             "Value": {
                 "id": "cf3d5574-1ff8-424b-b2a2-5a52e05465c6",
@@ -1076,6 +1084,14 @@
                 "id": "ba2f13fe-33a3-4315-8f1e-5dedeff576c2",
                 "resourcePath": "timelines\\tim_victory\\tim_victory.yy",
                 "resourceType": "GMTimeline"
+            }
+        },
+        {
+            "Key": "5bdbb8f0-f6be-4e65-8368-1d8313f57a61",
+            "Value": {
+                "id": "0de6dc48-74b9-4e61-83ae-1dd91fe16c50",
+                "resourcePath": "rooms\\rm_epilogue\\rm_epilogue.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2547,6 +2563,14 @@
             "Value": {
                 "id": "491eac81-08e9-4a34-a53c-9af06bce27bf",
                 "resourcePath": "sprites\\spr_arrow\\spr_arrow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b88d1b64-7cf9-47c8-ba95-139f4554cec1",
+            "Value": {
+                "id": "23d5e789-9aff-47da-9318-a358e1a65149",
+                "resourcePath": "sprites\\spr_epilogue\\spr_epilogue.yy",
                 "resourceType": "GMSprite"
             }
         },

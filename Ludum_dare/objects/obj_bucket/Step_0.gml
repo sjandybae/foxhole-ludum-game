@@ -66,7 +66,7 @@ else if(grabbed == 1){
 		global.water_lvl -= 0.5
 		instance_create_depth(x,y,depth+1,obj_droplet)
 	}
-	persistent = true	
+	//persistent = true	
 	
 	
 	//Restoring squish

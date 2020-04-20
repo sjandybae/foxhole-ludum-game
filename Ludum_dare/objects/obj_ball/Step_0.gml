@@ -264,7 +264,7 @@ else if(grabbed == 1){
 	
 	rot = 0
 	
-	persistent = true	
+	//persistent = true	
 	
 }
 

@@ -92,6 +92,28 @@ if(timeline_running && timeline_index == tim_prologue){
 }
 
 
+//Epilogue
+if(timeline_running && timeline_index == tim_epilogue){
+
+	draw_sprite_ext(spr_epilogue, image_index, 0, 0, 1, 1, 0, c_white, cut_alpha)
+	
+	draw_set_alpha(text_alpha)
+	
+	draw_set_font(global.fnt_normal_text);
+	draw_set_color(c_white);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	
+	//if(timeline_position <= 0){	
+		draw_text(100, 675-string_length(message), message)
+	//}
+	
+	
+	draw_set_alpha(1)	
+	
+}
+
+
 //gameover screen
 if(timeline_running && timeline_index == tim_game_over){
 
