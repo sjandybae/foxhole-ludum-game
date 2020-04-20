@@ -1,4 +1,35 @@
 if(instance_exists(obj_whale)){
+	
+//twilight time
+
+var w = display_get_gui_width()
+var h = display_get_gui_height()
+
+var scale = max(1, global.day_timer/5000)
+
+draw_set_alpha(0.25/scale)
+draw_set_color(c_black)
+
+draw_set_alpha(0.25/scale)
+draw_set_color(c_orange)
+gpu_set_blendmode(bm_dest_color)
+draw_rectangle(0, 0, w, h, false)
+gpu_set_blendmode(bm_normal)
+draw_set_color(c_white)
+draw_set_alpha(1)
+	
+	
+//buttons
+var _x = 8
+var _y = 8
+
+if(state == "normal")
+	var ind = 0
+else
+	var ind = 1
+
+draw_sprite_ext(spr_buttons, ind, _x, _y, 2, 2, 0, c_white, 1)
+
 
 //UI coords
 var _x = 50
