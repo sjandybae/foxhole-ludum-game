@@ -45,6 +45,18 @@ if(timeline_running && timeline_index == tim_prologue){
 
 	draw_sprite_ext(spr_prologue, image_index, 0, 0, 1, 1, 0, c_white, cut_alpha)
 	
+	draw_set_alpha(text_alpha)
+	
+	draw_set_font(global.fnt_normal_text);
+	draw_set_color(c_white);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	
+	//if(timeline_position <= 0){	
+		draw_text(104, 650-string_length(message), message)
+	//}
+	
+	
 	draw_set_alpha(1)	
 	
 }

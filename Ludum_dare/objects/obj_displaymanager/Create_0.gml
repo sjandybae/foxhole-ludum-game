@@ -75,6 +75,15 @@ global.game_over = false
 cut_alpha = 0;
 alpha_approach = 0
 
+text_alpha = 0
+text_alpha_approach = 0
+
+//Fonts
+message = 0;
+global.fnt_normal_text = font_add_sprite_ext(spr_box_font, "!',.?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789-", true, 0);
+global.fnt_sml_text = font_add_sprite_ext(spr_sml_font, "!',.?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789-", true, 0);
+
+
 
 //cursors
 wh_cur_x = 0;
