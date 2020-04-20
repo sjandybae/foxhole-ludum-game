@@ -8,7 +8,7 @@ with(other){
 		audio_play_sound(snd_bounce, 1, 0)
 		if (global.water_lvl > 0) {
 			audio_play_sound(snd_splash, 1, 0)
-			global.whale_hp += global.water_lvl*2
+			global.whale_hp += global.water_lvl * 3
 			global.water_lvl = 0
 			
 			other.emotion = "happy"
