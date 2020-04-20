@@ -21,9 +21,6 @@ global.pause = false;
 view_w = camera_get_view_width(view_camera[0])
 view_h = camera_get_view_height(view_camera[0])
 
-//Fonts
-global.fnt_normal_text = font_add_sprite_ext(spr_box_font, "!',.?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789-", true, 0);
-global.fnt_sml_text = font_add_sprite_ext(spr_sml_font, "!',.?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789-", true, 0);
 
 //Global keys
 screenshot = -1;

@@ -33,12 +33,14 @@ else if(emotion != "happy")
 	
 	
 //game over
-if(global.whale_hp <= 0){
+if(global.whale_hp <= 0 && global.game_over == false){
 	
 	with(obj_displaymanager){
-		timeline_speed = 0.007
+		timeline_position = 0
 		timeline_index = tim_game_over
+		timeline_speed = 0.007
 		timeline_running = true
+		global.game_over = true
 	}
 }
 	
