@@ -23,9 +23,9 @@ if(mode == "passive"){
 	hsp /= fric
 	vsp /= fric
 	obj_timer -= 1
-	if(distance_to_object(obj_player) < 32*2){
-		mode = "attack"
-	}
+	//if(distance_to_object(obj_player) < 32*2){
+	//	mode = "attack"
+	//}
 }
 
 

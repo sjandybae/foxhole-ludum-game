@@ -10,6 +10,10 @@ var _y2 = 674
 //draw_healthbar(_x, _y, _x + global.max_water_lvl, _y+16, global.water_lvl, c_gray, c_blue, c_aqua, 0, true, true)
 //draw_text(_x, _y, global.water_lvl)
 
+//TEST UI for day timer
+draw_healthbar(display_get_gui_width() - 20, _y2-86, display_get_gui_width() - 10, _y2, global.day_timer / global.max_day_timer * 100, c_orange, c_orange, c_aqua, 2, true, false)
+
+
 //whale hp
 draw_healthbar(_x + 3, _y2-86, _x + 12, _y2, 100 - (whale_ui_hp / global.whale_max_hp * 100), c_gray, c_red, c_red, 3, true, false)
 draw_sprite(spr_whale_ui, 0, _x, display_get_gui_height() - 80)
@@ -75,6 +79,24 @@ if(timeline_running && timeline_index == tim_game_over){
 	draw_set_valign(fa_middle);
 	draw_set_color(c_white);
 	draw_text(w/2, h/2, "GAME OVER");
+	
+	draw_set_alpha(1)	
+	
+}
+
+//victory screen
+if(timeline_running && timeline_index == tim_victory){
+
+	var w = display_get_gui_width()
+	var h = display_get_gui_height()
+
+	draw_set_alpha(cut_alpha)	
+	
+	draw_set_font(global.fnt_normal_text);
+	draw_set_halign(fa_middle);
+	draw_set_valign(fa_middle);
+	draw_set_color(c_white);
+	draw_text(w/2, h/2, "You survived the day!");
 	
 	draw_set_alpha(1)	
 	
