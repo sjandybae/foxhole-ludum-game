@@ -6,7 +6,8 @@
     "children": [
         "4960ef7f-136a-4a55-89dc-c96bb43369fb",
         "896b613b-37c2-427d-bc41-4b2e5a74609c",
-        "71029860-cd16-4054-872c-b34984d87178"
+        "71029860-cd16-4054-872c-b34984d87178",
+        "6e65bf3e-08cf-414a-9b59-ee24c885983f"
     ],
     "filterType": "GMObject",
     "folderName": "Blocks",

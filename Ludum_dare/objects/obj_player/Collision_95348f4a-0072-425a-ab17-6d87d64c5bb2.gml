@@ -12,6 +12,8 @@ if(down_key_press && other.grabbed == 1){
 	
 	alarm[0] = 5
 	
+	squish = 0.8
+	
 	other.grabbed = 0
 }
 
@@ -19,6 +21,8 @@ if(down_key_press && other.grabbed == 1){
 if(grab_key_press && other.grabbed == 1){
 	
 	//global.water_lvl = 0
+	
+	squish = 0.8
 	
 	other.grabbed = 0
 	

@@ -1311,6 +1311,14 @@
             }
         },
         {
+            "Key": "6e65bf3e-08cf-414a-9b59-ee24c885983f",
+            "Value": {
+                "id": "b5b07f22-abcd-4fc7-89ed-f1e1eaafbc28",
+                "resourcePath": "objects\\obj_breakable\\obj_breakable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6ee3e0fb-bcca-4948-a799-5edcb09383c4",
             "Value": {
                 "id": "d3780767-f0fe-47ed-8f2e-4d3d669023e7",
@@ -3291,6 +3299,14 @@
             "Value": {
                 "id": "227eb6b4-709e-4ea7-85d6-23520cdf23fe",
                 "resourcePath": "sprites\\spr_skull_shield\\spr_skull_shield.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fb109313-7dee-41ba-b7b3-467261244686",
+            "Value": {
+                "id": "36c62c8d-f4b9-4e44-8b57-5e66c4ebc6ce",
+                "resourcePath": "sprites\\spr_breakable\\spr_breakable.yy",
                 "resourceType": "GMSprite"
             }
         },
