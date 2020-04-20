@@ -12,6 +12,7 @@ coyote = 0 //jake
 face = 1
 squish = 1;
 state = "normal"
+bucket_knocked = false
 
 //Gameplay variables
 active = true

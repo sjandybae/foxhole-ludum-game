@@ -67,3 +67,24 @@ if(other.grabbed == 0){
 
 
 
+//Bucket knocked
+if(bucket_knocked == true && other.grabbed == 1){
+	
+	//global.water_lvl = 0
+	
+	squish = 0.8
+	
+	other.grabbed = 0
+	
+	other.hsp = face*-5
+	other.vsp = -6
+
+	audio_play_sound(snd_throw, 1, 0)
+	hold = false
+	throw = true
+	bucket_knocked = false
+	
+	alarm[0] = 5
+	
+}
+

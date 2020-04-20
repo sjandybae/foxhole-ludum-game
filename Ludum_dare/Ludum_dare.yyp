@@ -1471,6 +1471,14 @@
             }
         },
         {
+            "Key": "79c53aa6-cf62-44ac-ab7b-13849a39a51c",
+            "Value": {
+                "id": "02613a4e-e093-4a57-b1a0-0d96089403b8",
+                "resourcePath": "sprites\\spr_jumping_spooder\\spr_jumping_spooder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7ab1970c-c2ca-4310-883a-007625655cdd",
             "Value": {
                 "id": "fdeea0d5-ac1e-49db-a5e9-1b387e964632",
@@ -3284,6 +3292,14 @@
                 "id": "985114c9-4895-4c89-bd1e-d09473220703",
                 "resourcePath": "sounds\\snd_sword_cut\\snd_sword_cut.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "ece3eb97-844f-4a13-9de2-7cedb2d52541",
+            "Value": {
+                "id": "165d60e4-a1fb-46ad-bb57-b1647b56422f",
+                "resourcePath": "objects\\obj_jumping_spooder\\obj_jumping_spooder.yy",
+                "resourceType": "GMObject"
             }
         },
         {
