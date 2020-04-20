@@ -59,6 +59,7 @@ vsp = vsp + grav
 if(vsp >= max_vsp)
 	vsp = max_vsp
 
+if (place_meeting(x, y+vsp, obj_water) && !place_meeting(x, y-1, obj_water) && !audio_is_playing(snd_player_splash)) audio_play_sound(snd_player_splash, 1, 0)
 
 
 //Jumping
@@ -158,6 +159,7 @@ if (place_meeting(x, y+vsp, obj_block)){
 	if(vsp > 0 && !onground){
 		squish = 0.7
 		onground = true;
+		audio_play_sound(snd_grass_step, 1, 0)
 	}
 		
 	ball_jump = 0;
