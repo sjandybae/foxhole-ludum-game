@@ -12,6 +12,7 @@ with(other){
 			global.water_lvl = 0
 			
 			other.emotion = "happy"
+			global.happy_timer = 120;
 			
 			with(other){
 				alarm[0] = 120
