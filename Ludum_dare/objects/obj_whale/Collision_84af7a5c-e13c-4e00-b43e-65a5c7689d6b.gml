@@ -2,7 +2,7 @@ with(other){
 
 	if(vsp > 0 && grabbed == 0){
 		vsp = -10
-		hsp = hsp * 0.9 * sign(obj_whale.x - x)
+		hsp = hsp * -0.9 
 		other.wobble = 0
 		
 		audio_play_sound(snd_bounce, 1, 0)

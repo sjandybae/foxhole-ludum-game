@@ -159,50 +159,40 @@ if(grabbed ==  0)
 	//var platform = instance_place(x, y + vsp + 2, obj_backdrop)
 
 	#region
-	/*if(platform && boomerang == false){
-
-		if(bbox_bottom < platform.bbox_top){
-			
-			while (!place_meeting(x, y+sign(vsp), platform))
-			{
-				y = y + sign(vsp);
-			}
 	
-			//hsp_carry = platform.hsp;
-			//y += platform.vsp
-	
-			//Bouncing
-			if(place_meeting(x, y-1, platform))
-				vsp = (vsp * -1);
+	if(place_meeting(x, y+abs(vsp), obj_jumpthrough) && !place_meeting(x, y, obj_jumpthrough) && vsp > 0){
+		if (!place_meeting(x, y+sign(vsp), obj_jumpthrough))
+		{
+			y = y + sign(vsp);
+		}
 			
-			else
+		//if(place_meeting(x, y-1, obj_block))
+			//	vsp = (vsp * -1);
+			
+			//else
 				vsp = -p_eng;
 			//*********
 		
-			if(vsp != 0)
+			if(abs(vsp) > 1)
 			{
 				hit = 0;
 				if(rendered == true)
 					audio_play_sound(bounce_sound, 1, 0);
-					
 				instance_create_depth(x,y,-100,obj_splash);
-				instance_create_depth(x,y,-100,obj_dust);
 				h_squish = 1.5
 				v_squish = 0.5
 			}
 		
-			land = true;
-		
-			if(grav ==0)
-				grav = 0.5;
-			}
-		
-	}*/
+			
+	}
+	
 	#endregion
 
 	
 	//In air/ not in air
-	if (place_meeting(x, y+1, obj_block))
+	var platform = place_meeting(x, y+1, obj_jumpthrough) && !place_meeting(x, y, obj_jumpthrough);
+	
+	if (place_meeting(x, y+1, obj_block) || platform)
 		land = true;
 	else
 		land = false;

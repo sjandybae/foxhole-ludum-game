@@ -81,10 +81,10 @@ wh_cur_y = 0;
 bk_cur_x = 0;
 bk_cur_y = 0;
 
-//UI timers
+//UI
 alert_timer = 0;
 
-
+whale_ui_hp = 0;
 
 
 
