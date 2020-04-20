@@ -107,7 +107,7 @@ if(percent > 1.1){
 	//instance_activate_all();
 	changing_rooms = false
 }
-/*
+
 //Room Transition
 if(mode != TRANS_MODE.OFF){
 	
@@ -134,7 +134,7 @@ if(mode != TRANS_MODE.OFF){
 			case TRANS_MODE.NEXT:
 			{
 				mode = TRANS_MODE.INTRO;
-				slide = 0;
+				/*slide = 0;
 				
 				if(global.multiplayer_mode == false){
 					level_index++
@@ -147,17 +147,17 @@ if(mode != TRANS_MODE.OFF){
 						room_goto(new_lvl);
 				}
 				else
-					room_goto_next()
+					room_goto_next()*/
 
 				break;
 			}
 			
 			case TRANS_MODE.PREV:
 			{	
-				//mode = TRANS_MODE.INTRO;
+				mode = TRANS_MODE.INTRO;
 				//slide = w*-1;
 				
-				mode = TRANS_MODE.INTRO;
+				/*mode = TRANS_MODE.INTRO;
 				slide = 0;
 
 				if(global.multiplayer_mode == false){
@@ -171,10 +171,8 @@ if(mode != TRANS_MODE.OFF){
 						room_goto(new_lvl);
 				}
 				else
-					room_goto_previous();
+					room_goto_previous();*/
 				
-				prev_screen = sprite_create_from_surface(application_surface, 0, 0, w, h, 0, 0, 0, 0)
-				//next_screen = sprite_create_from_surface(application_surface, 0, 0, view_wport, w, 0, 0, 0, 0)
 				break;
 			}
 			
@@ -198,11 +196,24 @@ if(mode != TRANS_MODE.OFF){
 				//obj_player.x = obj_room_door.x
 				//obj_player.y = obj_room_door.y
 				//break;
-			/*
+			}
 			
 			case TRANS_MODE.RESTART:
 			{
 				game_restart();
+				break;
+			}
+			
+			case TRANS_MODE.REROOM:
+			{
+				mode = TRANS_MODE.INTRO;
+				
+				global.whale_hp = global.whale_max_hp
+				timeline_position = 0
+				global.game_over = false
+				timeline_running = false
+				
+				room_restart();
 				break;
 			}
 			
@@ -215,7 +226,7 @@ if(mode != TRANS_MODE.OFF){
 		}
 	
 	}
-}*/
+}
 
 //depth = -300
 

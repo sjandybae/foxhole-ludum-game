@@ -791,6 +791,14 @@
             }
         },
         {
+            "Key": "41bc1473-9f64-4a0c-ba50-c37e0f4f260e",
+            "Value": {
+                "id": "e7930273-6a48-4b2d-9ef4-be82885845eb",
+                "resourcePath": "timelines\\tim_game_over\\tim_game_over.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
             "Key": "41cf9b9d-c37c-4be0-9faf-9617f5acac3f",
             "Value": {
                 "id": "04b306e4-d63e-484e-8bd4-ceaaa0cec60a",

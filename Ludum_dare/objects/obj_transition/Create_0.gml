@@ -76,6 +76,7 @@ enum TRANS_MODE
 	RETURN,
 	GOTO,
 	RESTART,
+	REROOM,
 	INTRO
 }
 

@@ -1,27 +1,36 @@
 //Controls
 #region
-up_key = keyboard_check(vk_up) || gamepad_button_check(0, gp_padu);
-down_key = keyboard_check(vk_down) || gamepad_button_check(0, gp_padd);
 
-up_key_press = keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(0, gp_padu);
-up_key_release = keyboard_check_released(vk_up) || gamepad_button_check_released(0, gp_padu);
+if(active = true){
+	
+	up_key = keyboard_check(vk_up) || gamepad_button_check(0, gp_padu);
+	down_key = keyboard_check(vk_down) || gamepad_button_check(0, gp_padd);
 
-down_key_press = keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(0, gp_padd);
-down_key_release = keyboard_check_released(vk_down) || gamepad_button_check_released(0, gp_padd);
+	up_key_press = keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(0, gp_padu);
+	up_key_release = keyboard_check_released(vk_up) || gamepad_button_check_released(0, gp_padu);
 
-right_key = keyboard_check(vk_right) || gamepad_button_check(0, gp_padr);
-left_key = keyboard_check(vk_left) || gamepad_button_check(0, gp_padl);
+	down_key_press = keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(0, gp_padd);
+	down_key_release = keyboard_check_released(vk_down) || gamepad_button_check_released(0, gp_padd);
 
-right_key_press = keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr);
-left_key_press = keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl);
+	right_key = keyboard_check(vk_right) || gamepad_button_check(0, gp_padr);
+	left_key = keyboard_check(vk_left) || gamepad_button_check(0, gp_padl);
 
-grab_key_press = keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0, gp_face2);
-grab_key_hold = keyboard_check(ord("X")) || gamepad_button_check(0, gp_face2);
+	right_key_press = keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr);
+	left_key_press = keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl);
 
-jump_key_hold = keyboard_check(ord("Z")) || gamepad_button_check(0, gp_face1);
-jump_key_press = keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(0, gp_face1);
-jump_key_release = keyboard_check_released(ord("Z")) || gamepad_button_check_released(0, gp_face1);
+	grab_key_press = keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0, gp_face2);
+	grab_key_hold = keyboard_check(ord("X")) || gamepad_button_check(0, gp_face2);
+
+	jump_key_hold = keyboard_check(ord("Z")) || gamepad_button_check(0, gp_face1);
+	jump_key_press = keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(0, gp_face1);
+	jump_key_release = keyboard_check_released(ord("Z")) || gamepad_button_check_released(0, gp_face1);
+
+}
 #endregion
+
+
+//Deactivated
+
 
 
 //sprites
@@ -32,7 +41,10 @@ scr_drawplayer()
 
 
 //horizontal movement
-move = right_key - left_key;
+if(active == false)
+	move = 0;
+else
+	move = right_key - left_key;
 
 if(move != 0)
 	hsp = lerp(hsp, max_spd*move, 0.1)

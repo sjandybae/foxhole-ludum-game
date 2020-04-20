@@ -7,12 +7,13 @@ jspd = -6.25
 move = 0;
 max_spd = 3
 onground = false //No longer in use
-jump_buffer = 15 //jake
+jump_buffer = 0 //jake
 coyote = 0 //jake
 face = 1
 squish = 1;
 
 //Gameplay variables
+active = true
 throw = false
 hold = false
 crawl = false
