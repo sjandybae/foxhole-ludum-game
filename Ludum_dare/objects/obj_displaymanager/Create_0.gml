@@ -72,6 +72,7 @@ for(var i = 1; i < room_last; i++){
 
 //game states
 global.game_over = false
+global.victory = false
 cut_alpha = 0;
 alpha_approach = 0
 

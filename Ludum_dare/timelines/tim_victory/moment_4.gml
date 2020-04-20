@@ -1,2 +1,2 @@
 scr_slide_transition(TRANS_MODE.RESTART)
-victory = false
+global.victory = false
