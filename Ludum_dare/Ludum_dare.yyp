@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "1072e40c-32ee-48f8-9425-2cb79d802709",
+            "Value": {
+                "id": "303c775d-f4e1-42da-820a-929064b3e254",
+                "resourcePath": "sprites\\spr_jumpthrough\\spr_jumpthrough.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1099eadc-1a5f-4f76-aa6f-7851b6120cfa",
             "Value": {
                 "id": "7ca93c6a-7737-4130-b894-f0d6db21381f",
@@ -1292,6 +1300,14 @@
                 "id": "ff114846-9ee3-435d-8068-332b9e010472",
                 "resourcePath": "sounds\\snd_dart_shoot\\snd_dart_shoot.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "71029860-cd16-4054-872c-b34984d87178",
+            "Value": {
+                "id": "c60224f1-00c2-49a4-aca0-90fa70d45987",
+                "resourcePath": "objects\\obj_jumpthrough\\obj_jumpthrough.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2999,6 +3015,14 @@
             }
         },
         {
+            "Key": "e62e0521-338a-45f4-a8cf-193ce403f8c1",
+            "Value": {
+                "id": "ccfe7b5e-25ab-4c1d-a429-05ab409d65ed",
+                "resourcePath": "scripts\\scr_jumpthrough\\scr_jumpthrough.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e65efc5b-a2d5-4d6d-b0f0-3567b7a226fd",
             "Value": {
                 "id": "0a849d3a-2839-4ca6-bf77-201921692c6a",
@@ -3368,7 +3392,8 @@
         "55191c05-c813-45c5-a851-f878f2cf42a9",
         "2218aa8e-62b0-4ced-8164-525ecb60fe17",
         "2627737b-7761-42a9-8a6c-bb236a03f50c",
-        "4d526f4d-42f1-4334-9756-d8c9130b913d"
+        "4d526f4d-42f1-4334-9756-d8c9130b913d",
+        "e62e0521-338a-45f4-a8cf-193ce403f8c1"
     ],
     "tutorial": ""
 }
