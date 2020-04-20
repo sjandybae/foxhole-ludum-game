@@ -42,6 +42,10 @@ if(instance_exists(follow)){
 global.screen_shake *= 0.9
 
 
+//ui stuff
+whale_ui_hp = lerp(whale_ui_hp, global.whale_hp, 0.1)
+
+
 
 //Cutscene stuff
 

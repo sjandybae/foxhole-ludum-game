@@ -11,6 +11,7 @@ jump_buffer = 0 //jake
 coyote = 0 //jake
 face = 1
 squish = 1;
+state = "normal"
 
 //Gameplay variables
 active = true

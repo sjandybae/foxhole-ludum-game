@@ -80,7 +80,9 @@ if (place_meeting(x, y+vsp, obj_water) && !place_meeting(x, y-1, obj_water) && !
 }
 
 //Jumping
-if(place_meeting(x, y+1, obj_block)){ //Update onground
+var platform = place_meeting(x, y+1, obj_jumpthrough) && !place_meeting(x, y, obj_jumpthrough);
+
+if(place_meeting(x, y+1, obj_block) || platform){ //Update onground
 	coyote = 6 // num of frames the game will allow you to jump after walking off a tile
 	onground = true
 }
@@ -90,7 +92,7 @@ else{
 }
 
 if(jump_key_press == true) //Register player input
-	jump_buffer = 15
+	jump_buffer = 5
 
 jump_buffer -= 1 //reduce the jump_buffer
 	
@@ -127,6 +129,12 @@ else if(!down_key) && !place_meeting(x, y-16, obj_block) && crawl{
 	mask_index = spr_player
 	squish = 0.8
 }
+
+//Holding state
+if(collision_rectangle(x-8, y, x+8, y-48, obj_bucket, false, true) && hold)
+	state = "holding"
+else
+	state = "normal"
 
 
 //Raising the roof
@@ -178,13 +186,36 @@ if (place_meeting(x, y+vsp, obj_block)){
 		onground = true;
 		audio_play_sound(snd_grass_step, 1, 0)
 	}
-		
-	ball_jump = 0;
 
 	vsp = 0;
 
 	
 }
+
+//Back drop
+	#region
+	
+	//if(platform){
+
+		if(place_meeting(x, y+abs(vsp), obj_jumpthrough) && !place_meeting(x, y, obj_jumpthrough) && vsp > 0){
+			if (!place_meeting(x, y+sign(vsp), obj_jumpthrough))
+			{
+				y = y + sign(vsp);
+			}
+			
+			if(vsp > 0 && !onground){
+				squish = 0.7
+				onground = true;
+				audio_play_sound(snd_grass_step, 1, 0)
+			}
+		
+			vsp = 0;
+		}
+
+	//}
+	#endregion
+	
+
 
 y = y + vsp;
 #endregion
