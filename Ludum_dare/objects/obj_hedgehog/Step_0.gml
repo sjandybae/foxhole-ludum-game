@@ -6,7 +6,7 @@ event_inherited();
 
 if(mode == "passive"){
 	hsp = 1 * face
-	if(place_meeting(x+hsp,y,obj_block)) || (!place_meeting(x+hsp-16,y+16,obj_block) && place_meeting(x,y+16,obj_block)){//Wallbump
+	if(place_meeting(x+hsp,y,obj_block)) || (!place_meeting(x+hsp*16,y+16,obj_block) && place_meeting(x,y+16,obj_block)){//Wallbump
 		 hsp = 0
 		 face *= -1
 		 vsp -= 1
