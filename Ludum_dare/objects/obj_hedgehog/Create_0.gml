@@ -14,3 +14,4 @@ obj_dir = 1
 player_stun_timer = 0
 mode = "passive"
 state_timer = 0
+squish = 0
