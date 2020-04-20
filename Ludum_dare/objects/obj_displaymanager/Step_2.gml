@@ -43,4 +43,11 @@ global.screen_shake *= 0.9
 
 
 
+//Cutscene stuff
+
+cut_alpha = lerp(cut_alpha, alpha_approach, 0.05)
+
+
+
+
 

@@ -31,4 +31,15 @@ if (global.whale_hp / global.whale_max_hp < 0.3)
 else if(emotion != "happy")
 	emotion = "normal"
 	
+	
+//game over
+if(global.whale_hp <= 0){
+	
+	with(obj_displaymanager){
+		timeline_speed = 0.007
+		timeline_index = tim_game_over
+		timeline_running = true
+	}
+}
+	
 

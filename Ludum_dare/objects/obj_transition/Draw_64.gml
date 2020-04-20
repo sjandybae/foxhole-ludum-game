@@ -46,7 +46,7 @@ draw_text(x + 128, y, gamepad_get_description(port))*/
 //if(changing_rooms == true)
 //	draw_sprite_ext(prev_screen, 0, 0-percent, 0, 1, 1, 0, c_white, 1)
 
-/*if(mode != TRANS_MODE.OFF)
+if(mode != TRANS_MODE.OFF)
 {
 
 	draw_set_color(c_black);
@@ -58,7 +58,7 @@ draw_text(x + 128, y, gamepad_get_description(port))*/
 }
 
 draw_set_alpha(1)
-draw_set_color(c_white);*/
+draw_set_color(c_white);
 
 /*
 if(slide != w){
