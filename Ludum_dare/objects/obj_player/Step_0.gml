@@ -130,6 +130,12 @@ else if(!down_key) && !place_meeting(x, y-16, obj_block) && crawl{
 	squish = 0.8
 }
 
+//Holding state
+if(collision_rectangle(x-8, y, x+8, y-48, obj_bucket, false, true) && hold)
+	state = "holding"
+else
+	state = "normal"
+
 
 //Raising the roof
 if(grab_key_hold)

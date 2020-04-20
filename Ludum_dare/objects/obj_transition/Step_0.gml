@@ -247,7 +247,8 @@ layer_x("Backgrounds_4", _cam_x * 0.85);
 
 
 layer_x("Tiles_6", _cam_x * 0.03);
-layer_x("Tiles_3", _cam_x * 0.02);
+layer_x("Background_Tiles", _cam_x * 0.02);
+layer_x("Background_Cave_Tiles", _cam_x * 0.02);
 layer_x("Fore_1", _cam_x * 0.01);
 
 

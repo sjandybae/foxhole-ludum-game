@@ -919,6 +919,14 @@
             }
         },
         {
+            "Key": "4c73ecac-90d2-4475-addf-27b8469d295f",
+            "Value": {
+                "id": "0a48e83e-f34c-42f4-9ebf-546215d42df3",
+                "resourcePath": "sprites\\spr_buttons\\spr_buttons.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4cee1c92-18f5-40ce-980b-804e2294939d",
             "Value": {
                 "id": "7eb8fb7f-602c-4ef8-ba60-032fdc6efca2",
