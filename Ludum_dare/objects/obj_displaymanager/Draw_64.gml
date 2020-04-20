@@ -17,15 +17,19 @@ if (global.whale_hp / global.whale_max_hp < 0.3) alert_timer++;
 else alert_timer = 0
 
 
-if (alert_timer > 30) {
+
 	draw_set_font(global.fnt_normal_text);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_middle);
-	draw_set_color(c_orange);	
-	draw_text(_x + 42, _y2 + 14, "HELP!");
+	draw_set_color(c_orange);
+
+if (global.happy_timer > 0) {
+	global.happy_timer--;
+	draw_text(_x + 44, _y2 + 14, "THANKS!");
+} else if (alert_timer > 30) {
+	draw_text(_x + 44, _y2 + 14, "HELP!");
 }
 if (alert_timer > 60) alert_timer = 0;
-
 
 //gameover screen
 if(timeline_running && timeline_index == tim_game_over){

@@ -83,6 +83,7 @@ bk_cur_y = 0;
 
 //UI
 alert_timer = 0;
+global.happy_timer = 0;
 
 whale_ui_hp = 0;
 
