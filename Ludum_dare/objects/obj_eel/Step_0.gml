@@ -6,7 +6,7 @@ if(place_meeting(x,y,obj_bucket)){
 }
 
 
-if(place_meeting(x,y,obj_player)){
+if(place_meeting(x,y,obj_player) && obj_player.hold == true){
 	obj_player.bucket_knocked = true
 }
 

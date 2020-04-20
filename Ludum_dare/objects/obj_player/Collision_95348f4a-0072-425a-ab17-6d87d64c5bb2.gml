@@ -68,7 +68,7 @@ if(other.grabbed == 0){
 
 
 //Bucket knocked
-if(bucket_knocked == true){
+if(bucket_knocked == true && other.grabbed == 1){
 	
 	//global.water_lvl = 0
 	
