@@ -43,7 +43,7 @@ var _y2 = 674
 //draw_text(_x, _y, global.water_lvl)
 
 //TEST UI for day timer
-draw_healthbar(display_get_gui_width() - 20, _y2-86, display_get_gui_width() - 10, _y2, global.day_timer / global.max_day_timer * 100, c_orange, c_orange, c_aqua, 2, true, false)
+//draw_healthbar(display_get_gui_width() - 20, _y2-86, display_get_gui_width() - 10, _y2, global.day_timer / global.max_day_timer * 100, c_orange, c_orange, c_aqua, 2, true, false)
 
 
 //whale hp

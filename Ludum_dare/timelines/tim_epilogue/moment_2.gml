@@ -1,7 +1,7 @@
 //cut_alpha = 0
 //alpha_approach = 1
 
-message = "The whale took to the skies again,\nwaving farewell to her heroic fox friend.\n\nAnd so, Pitcher’s ordinary day in the mountains\ncame to a happy conclusion."
+message = "The whale took to the skies again,\nwaving farewell to her heroic fox friend.\n\nAnd so, Pitcher's ordinary day in the mountains\ncame to a happy conclusion."
 
 cut_alpha = 0
 alpha_approach = 1

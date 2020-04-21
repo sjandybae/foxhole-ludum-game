@@ -11,6 +11,10 @@ if(place_meeting(x,y,obj_player) && obj_player.hold == true){
 }
 
 
+wobble += 0.1
+
+if(wobble >= pi)
+	wobble = -pi
 
 
 

@@ -11,7 +11,11 @@ if(collision_rectangle(x-4, y-4, x+36, y+36, bucket, false, true)) && (bucket.hs
 
 	with(bucket){
 		hsp = hsp * -0.5
-		vsp = vsp * -0.5
+		
+		if(vsp > 0)
+			vsp = -5
+		else
+			vsp = 5
 	}
 }
 

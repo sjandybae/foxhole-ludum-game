@@ -1,4 +1,4 @@
-message = "Thanks to Pitcher’s hard work,\nthe whale was able to recoverall of her health,\n\njust in time for the whale's family to arrive."
+message = "Thanks to Pitcher's hard work,\nthe whale was able to recover all of her health,\n\njust in time for the whale's family to arrive."
 
 text_alpha = 0;
 text_alpha_approach = 1
