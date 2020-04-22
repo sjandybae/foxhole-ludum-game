@@ -33,3 +33,17 @@ else{
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * h_squish, image_yscale * v_squish, rot, c_white, image_alpha);
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * h_squish, image_yscale * v_squish, rot, c_black, burning);
 }
+
+
+if(grabbed == 1){
+
+	with(obj_player){
+	
+		if(hold && !crawl)
+		draw_sprite_ext(sprite_index+1, image_index, x, y, face/squish, image_yscale*squish, image_angle, c_white, 1)
+
+	}
+
+}
+
+
