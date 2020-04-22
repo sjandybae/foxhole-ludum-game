@@ -1,7 +1,6 @@
 if(instance_exists(obj_whale)){
 	
 //twilight time
-
 var w = display_get_gui_width()
 var h = display_get_gui_height()
 

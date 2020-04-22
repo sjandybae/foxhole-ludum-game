@@ -2,8 +2,8 @@
 
 image_speed = 0;
 
-ideal_width = 0
-ideal_height = 360
+//ideal_width = 0
+//ideal_height = 360
 
 global.multiplayer_mode = false
 
@@ -24,8 +24,6 @@ for(var i = 0; i < 4; i++){
 	
 }
 
-//Keeping player score
-global.score_keeping = array_create(4, 0)
 
 #endregion
 

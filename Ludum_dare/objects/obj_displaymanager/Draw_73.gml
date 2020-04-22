@@ -46,7 +46,6 @@ draw_sprite_ext(spr_cursors, 0, wh_cur_x, wh_cur_y, 1, 1, 0, c_white, wh_cur_alp
 #endregion
 
 
-
 //Bucket wh_cursor
 #region
 //wh_cursor X
