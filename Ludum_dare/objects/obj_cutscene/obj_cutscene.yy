@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "obj_cutscene",
     "eventList": [
-        {
-            "id": "0093515a-1214-4152-918d-59097e193a4c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "858c84fc-d2f6-43cb-9819-344e4959f38f",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "37d08d91-556d-43bf-9fe9-3e30c940f349"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

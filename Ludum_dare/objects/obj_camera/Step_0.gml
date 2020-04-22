@@ -8,7 +8,6 @@ global.interact_key = keyboard_check_pressed(ord("Z")) || gamepad_button_check_p
 //Normal camera
 if(instance_exists(obj_player)){
 	
-
 	x = obj_player.x
 	y = obj_player.y
 }

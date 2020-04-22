@@ -1375,14 +1375,6 @@
             }
         },
         {
-            "Key": "858c84fc-d2f6-43cb-9819-344e4959f38f",
-            "Value": {
-                "id": "b783533a-bee4-4d53-93cb-10a3915cdc4e",
-                "resourcePath": "objects\\obj_player_reference\\obj_player_reference.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "86a8dc20-75a0-485b-acda-2bbcf642ea37",
             "Value": {
                 "id": "4e3ed5bb-19ea-42f0-b67f-7fd91255ee1c",
