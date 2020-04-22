@@ -36,10 +36,6 @@ if(grabbed ==  0)
 	}
 	
 	
-	//Depth
-	if(instance_exists(obj_player))
-		depth = obj_player.depth + 1
-	
 	//Facing direction
 	facing = sign(hsp)
 	
@@ -76,8 +72,6 @@ if(grabbed ==  0)
 		in_water = false
 		
 		
-		
-	
 	//Building potential energy
 	if(land == false){
 		for(i = 0; i < vsp-(weight*3); i += 0.01)
@@ -87,6 +81,8 @@ if(grabbed ==  0)
 	}
 	else
 		p_eng = 0;
+	
+	
 	
 	//Vertical movement
 	if(in_water == false)
