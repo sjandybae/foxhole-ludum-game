@@ -1,1 +1,0 @@
-in_door = false;

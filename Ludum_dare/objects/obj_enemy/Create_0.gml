@@ -15,12 +15,8 @@ drop_chance = false
 if(drop_rate != false)
 	drop_chance = irandom(drop_rate)
 
-next_room = false;
-prev_room = false;
-in_door = false;
-too_big = false;
 
-damage_boost = false
+
 blink = 0;
 aura = 0
 max_speed = 4;
