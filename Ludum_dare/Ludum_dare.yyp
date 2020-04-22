@@ -1343,14 +1343,6 @@
             }
         },
         {
-            "Key": "a0bd2067-8697-43f8-9382-e97b3b65c991",
-            "Value": {
-                "id": "44344607-f175-4cce-96e1-d45673bab500",
-                "resourcePath": "objects\\obj_hitbox\\obj_hitbox.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "a175f7aa-02f1-4c44-bf19-4c765f8d2196",
             "Value": {
                 "id": "44ad26e8-c75d-41cc-a447-d7fe06ed168d",
