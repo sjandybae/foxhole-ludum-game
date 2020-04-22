@@ -4,10 +4,7 @@ audio_group_set_gain(audiogroup_music, global.music_volume, 0)
 
 global.music_volume = lerp(global.music_volume, global.music_volume_set, 0.05)
 
-if(!audio_is_playing(global.current_music) && !audio_is_playing(snd_a1_loop)){
-	
-	if(global.current_music == snd_a1_intro)
-		global.current_music=snd_a1_loop
+if(!audio_is_playing(global.current_music)){
 	
 	audio_play_sound(global.current_music, 2, 0)
 }
