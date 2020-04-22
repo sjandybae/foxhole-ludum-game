@@ -52,9 +52,9 @@ if(instance_exists(obj_whale))
 if(timeline_index == tim_prologue){
 	
 	if keyboard_check(vk_anykey)
-		timeline_speed = 0.05
+		timeline_speed = 0.06
 	else
-		timeline_speed = 0.004
+		timeline_speed = 0.003
 }
 
 
