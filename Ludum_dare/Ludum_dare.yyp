@@ -495,14 +495,6 @@
             }
         },
         {
-            "Key": "3f6bcbbe-2401-4e10-a749-332662b70e04",
-            "Value": {
-                "id": "36674909-15ea-4675-9db7-4b96a999388e",
-                "resourcePath": "sprites\\spr_desert_cave2\\spr_desert_cave2.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "3ff8c688-a428-4297-890c-5a314a5bf770",
             "Value": {
                 "id": "16477dcb-5b8a-4006-80a0-2e5a3cf464bb",
@@ -1879,14 +1871,6 @@
             }
         },
         {
-            "Key": "cc8aed79-8a58-4c32-8b5e-8418de9f9528",
-            "Value": {
-                "id": "53509c09-0073-4ce9-9ce0-afaf376684e4",
-                "resourcePath": "tilesets\\tile_desert_cave2\\tile_desert_cave2.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "64aed815-6896-49b5-a526-86f64c9c8ad2",
@@ -2204,14 +2188,6 @@
                 "id": "d567983c-ca03-4c8c-a5fd-a6da953950d6",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
-            }
-        },
-        {
-            "Key": "f5c04ef5-6e70-44d8-a38a-baf092f054c4",
-            "Value": {
-                "id": "49962e04-361c-4e63-8c17-a13aa80c114f",
-                "resourcePath": "views\\f5c04ef5-6e70-44d8-a38a-baf092f054c4.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
